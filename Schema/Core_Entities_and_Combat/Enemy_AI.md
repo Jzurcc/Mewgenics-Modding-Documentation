@@ -71,7 +71,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 55
+> **Total Count:** 87
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -111,7 +111,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `flat_cast_bonus` | Number | A flat bonus added to the AI's cast chance evaluation. | 5 | `99999` |
 | `randomness` | Number | The amount of randomness added to AI decision-making to avoid predictability. | 5 | `4`<br>`50`<br>`6` |
 | `cap_distance_to_ally` | Number | The maximum distance the AI will maintain from ally units. | 4 | `2`<br>`4`<br>`7` |
-| `simple` | Boolean | If true, the AI uses simplified decision-making logic. | 38 | `true` |
+| `simple` | Boolean | If true, the AI uses simplified decision-making logic. | 3 | `true` |
 | `consider_aoe` | Boolean | If true, the AI considers area-of-effect damage when evaluating actions. | 3 | `false`<br>`true` |
 | `danger_avoidance` | Float | A weight multiplier for the AI's tendency to avoid dangerous positions. | 3 | `.1`<br>`1000`<br>`20` |
 | `distance_to_aggro_target` | Number | The preferred distance the AI tries to maintain from its aggro target. Negative values indicate behind. | 3 | `-1`<br>`-10` |
@@ -120,15 +120,15 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `distance_to_water` | Float | The preferred distance the AI tries to maintain from water tiles. Negative values indicate moving towards. | 2 | `-.0001`<br>`-1` |
 | `face_aggro_target` | Number | A weight multiplier for the AI's tendency to face its aggro target. | 2 | `1`<br>`10` |
 | `spawn_object_preferred_distance` | Number | The preferred distance from the unit at which objects are spawned. | 2 | `4`<br>`5` |
+| `face_camera` | Boolean | If true, the spawned unit always faces the camera. | 1 | `1000`<br>`true` |
+| `lava` | Number | A weight or priority value for preferring lava tiles in AI movement decisions. | 1 | `5` |
+| `tall_grass` | Number | A weight or priority value for preferring tall grass tiles in AI movement decisions. | 1 | `5` |
 | `cap_distance_to_character` | Number | The maximum distance the AI will maintain from any character (ally or enemy). | 1 | `2` |
 | `cap_total_distance_moved` | Number | The maximum number of tiles a unit can move before its movement is capped. | 1 | `1` |
 | `consider_aggro_target_enemy` | Boolean | If true, the AI considers the aggro target when determining movement or attack behavior. | 1 | `true` |
 | `count_nomove_in_eval` | Boolean | If true, the evaluation of a move includes the option of not moving. | 1 | `false` |
 | `distance_to_center` | Number | The distance in tiles from the current position to the map center for AI evaluation. | 1 | `-1` |
 | [`exclude_characters_tagged`](../Reference_and_Meta/Enums.md#enum-exclude_characters_tagged) | Enum | Specifies a tag; characters with this tag are excluded from AI behavior targeting. | 1 | `siren` |
-| `face_camera` | Boolean | If true, the spawned unit always faces the camera. | 3 | `1000`<br>`true` |
-| `lava` | Number | A weight or priority value for preferring lava tiles in AI movement decisions. | 3 | `5` |
-| `tall_grass` | Number | A weight or priority value for preferring tall grass tiles in AI movement decisions. | 2 | `5` |
 
 </details>
 

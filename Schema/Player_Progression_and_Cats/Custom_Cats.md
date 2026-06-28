@@ -50,26 +50,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 155 | Default<br>FormChange<br>Druid |
-
-</details>
-
-
----
-
-
-### Object: `arm1`
-
-
-**Definition:** The catalog ID for the cat's first arm part.  
-**Total Count:** 202
-
-<details>
-<summary><b>Expand</b></summary
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `frame` | Integer | The sprite frame index to display. | 1272 | `1`<br>`10`<br>`100` |
+| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 9 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -88,9 +69,27 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `frame` | Integer | The sprite frame index to display. | 1272 | `1`<br>`10`<br>`100` |
+| `frame` | Integer | The sprite frame index to display. | 2 | `1`<br>`10`<br>`100` |
 
 </details>
 
 
 ---
+### Object: `arm1`
+
+
+**Definition:** The catalog ID for the cat's first arm part.  
+**Total Count:** 202
+
+<details>
+<summary><b>Expand</b></summary
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `frame` | Integer | The sprite frame index to display. | 2 | `1`<br>`10`<br>`100` |
+
+</details>
+
+
+---
+

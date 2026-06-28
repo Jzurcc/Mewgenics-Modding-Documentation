@@ -63,12 +63,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 498 | `{ . . . }` |
-| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 155 | Default<br>FormChange<br>Druid |
-| `id` | Integer | The unique numerical identifier for this injury or status effect. | 42 | `-1`<br>`0`<br>`1` |
+| `id` | Integer | The unique numerical identifier for this injury or status effect. | 13 | `-1`<br>`0`<br>`1` |
+| [`text`](../Assets_and_Localization/Strings.md#string-text) | String | The localization key for the name of this injury. | 13 | `""`<br>`"COMBAT_POPUP_RECHARGED"`<br>`"INJURY_NAME_BROKENLEG"` |
 | [`deathsound`](../Reference_and_Meta/Enums.md#enum-deathsound) | Enum | The name of the sound effect played when the unit dies from this injury. | 13 | `Injury_Bleed`<br>`Injury_BrokenLeg`<br>`Injury_BrokenPaw` |
-| [`text`](../Assets_and_Localization/Strings.md#string-text) | String | The localization key for the name of this injury. | 15 | `""`<br>`"COMBAT_POPUP_RECHARGED"`<br>`"INJURY_NAME_BROKENLEG"` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 12 | `{ . . . }` |
 | [`scars`](../Reference_and_Meta/Miscellaneous.md#object-scars) | Object | An object mapping body parts to ranges of scar texture indices applied on injury. | 10 | `{ . . . }` |
+| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -89,13 +89,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 361 | `-1`<br>`-2`<br>`-3` |
-| [`spd`](../Reference_and_Meta/Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 332 | `-1`<br>`-10`<br>`-2` |
-| [`cha`](../Reference_and_Meta/Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 337 | `+1`<br>`-1`<br>`-2` |
-| [`int`](../Reference_and_Meta/Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 355 | `-1`<br>`-10`<br>`-2` |
-| [`str`](../Reference_and_Meta/Enums.md#enum-str) | Enum / Integer | The Strength stat value or modifier. | 335 | `-1`<br>`-2`<br>`-3` |
-| [`dex`](../Reference_and_Meta/Enums.md#enum-dex) | Enum / Integer | The Dexterity stat value or modifier. | 250 | `-1`<br>`-2`<br>`-3` |
-| [`lck`](../Reference_and_Meta/Enums.md#enum-lck) | Enum / Integer | The Luck stat value or modifier. | 283 | `-1`<br>`-2`<br>`-3` |
+| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 3 | `-1`<br>`-2`<br>`-3` |
+| [`lck`](../Reference_and_Meta/Enums.md#enum-lck) | Enum / Integer | The Luck stat value or modifier. | 3 | `-1`<br>`-2`<br>`-3` |
+| [`int`](../Reference_and_Meta/Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 2 | `-1`<br>`-10`<br>`-2` |
+| [`cha`](../Reference_and_Meta/Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 2 | `+1`<br>`-1`<br>`-2` |
+| [`str`](../Reference_and_Meta/Enums.md#enum-str) | Enum / Integer | The Strength stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
+| [`dex`](../Reference_and_Meta/Enums.md#enum-dex) | Enum / Integer | The Dexterity stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
+| [`spd`](../Reference_and_Meta/Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 1 | `-1`<br>`-10`<br>`-2` |
 
 </details>
 
@@ -116,10 +116,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head`](../Reference_and_Meta/Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 449 | `-1`<br>`1`<br>`1.3` |
-| `body` | Float | The catalog ID for the cat's body part. | 203 | `-1`<br>`1`<br>`1.1` |
-| [`arms`](../Reference_and_Meta/Arrays.md#array-arms) | Array | The ID or range of IDs for the arm mutation appearance. | 7 | `900`<br>`[10 20]` |
-| [`legs`](../Reference_and_Meta/Arrays.md#array-legs) | Array | The ID or range of IDs for the leg mutation appearance. | 14 | `-1`<br>`306`<br>`322` |
+| [`head`](../Reference_and_Meta/Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 6 | `-1`<br>`1`<br>`1.3` |
+| `body` | Float | The catalog ID for the cat's body part. | 3 | `-1`<br>`1`<br>`1.1` |
+| [`legs`](../Reference_and_Meta/Arrays.md#array-legs) | Array | The ID or range of IDs for the leg mutation appearance. | 1 | `-1`<br>`306`<br>`322` |
+| [`arms`](../Reference_and_Meta/Arrays.md#array-arms) | Array | The ID or range of IDs for the arm mutation appearance. | 1 | `900`<br>`[10 20]` |
 | [`limbs`](../Reference_and_Meta/Arrays.md#array-limbs) | Array | Array of limb IDs associated with this scar. | 1 | `[21 31]` |
 
 </details>

@@ -28,8 +28,11 @@ HiddenStats {
 
 These identifiers are proven to exist or work in the engine but are completely absent from `.gon` schema extraction. They may be hardcoded in the engine binary, deprecated, or exist only as internal state strings.
 
+### Object: `View All Hidden Identifiers`
+
+
 <details>
-<summary><b>View All Hidden Identifiers</b></summary>
+<summary><b>Expand</b></summary>
 
 | :--- |
 | Identifier |
