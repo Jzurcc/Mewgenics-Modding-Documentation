@@ -38,7 +38,8 @@
 
 ## File: `butcher_passives.gon`
 
-### `Putrefy`
+### `Putrefy`  
+
 **Name:** Putrefy  
 **Description:** Your basic attack inflicts Rot 1.  
 **Source:** `butcher_passives.gon`  
