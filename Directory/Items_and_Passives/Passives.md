@@ -73,6 +73,7 @@ Putrefy {
 ---
 
 ### `NeverFull`
+
 **Name:** Never Full  
 **Description:** You can heal over your max HP.
 Excess HP is lost between battles.  
@@ -105,6 +106,7 @@ NeverFull {
 ---
 
 ### `MainCourse`
+
 **Name:** Supersize Me!  
 **Description:** Food and scrap pickups you spawn are bigger.  
 **Source:** `butcher_passives.gon`  
