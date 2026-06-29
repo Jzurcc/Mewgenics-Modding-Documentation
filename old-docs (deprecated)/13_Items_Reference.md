@@ -1588,7 +1588,7 @@ lck 2
 
 ### Flower Mask (`FlowerMask`)
 - **Kind**: `face` | **Rarity**: `uncommon` | **Set**: `Flower`
-- **Description**: Your basic attack has a +5% chance to inflict Entangled. Plants flowers on each tile you move through. [s:.7](Stacking this effect plants flowers in a wider area.)[/s]
+- **Description**: Your basic attack has a +5% chance to inflict Entangled. Plants flowers on each tile you move through. \[s:.7\](Stacking this effect plants flowers in a wider area.)\[/s\]
 - **Mechanics**:
 ```gon
 passives {
@@ -1604,7 +1604,7 @@ passives {
 
 ### Flower Hat (`FlowerHat`)
 - **Kind**: `head` | **Rarity**: `uncommon` | **Set**: `Flower`
-- **Description**: Your basic attack has a +5% chance to inflict Entangled. Plants flowers on each tile you move through. [s:.7](Stacking this effect plants flowers in a wider area.)[/s]
+- **Description**: Your basic attack has a +5% chance to inflict Entangled. Plants flowers on each tile you move through. \[s:.7\](Stacking this effect plants flowers in a wider area.)\[/s\]
 - **Mechanics**:
 ```gon
 passives {
@@ -1620,7 +1620,7 @@ passives {
 
 ### Flower Necklace (`FlowerNecklace`)
 - **Kind**: `neck` | **Rarity**: `uncommon` | **Set**: `Flower`
-- **Description**: Your basic attack has a +5% chance to inflict Entangled. Plants flowers on each tile you move through. [s:.7](Stacking this effect plants flowers in a wider area.)[/s]
+- **Description**: Your basic attack has a +5% chance to inflict Entangled. Plants flowers on each tile you move through. \[s:.7\](Stacking this effect plants flowers in a wider area.)\[/s\]
 - **Mechanics**:
 ```gon
 passives {
@@ -2679,7 +2679,7 @@ passives {
 
 ### Face Brand (`FaceBrand`)
 - **Kind**: `face` | **Rarity**: `rare` | **Set**: `Monk`
-- **Description**: Each time you use your basic attack, gain +1 [img:shield]. [s:.7](This counts as an empty armor slot.)[/s]
+- **Description**: Each time you use your basic attack, gain +1 [img:shield]. \[s:.7\](This counts as an empty armor slot.)\[/s\]
 - **Mechanics**:
 ```gon
 weightless true
@@ -2692,7 +2692,7 @@ weightless true
 
 ### Head Brand (`HeadBrand`)
 - **Kind**: `head` | **Rarity**: `rare` | **Set**: `Monk`
-- **Description**: Your movement action is Jump. If you land on a unit, deal 1 damage to it and bounce to an adjacent tile. [s:.7](This counts as an empty armor slot.)[/s]
+- **Description**: Your movement action is Jump. If you land on a unit, deal 1 damage to it and bounce to an adjacent tile. \[s:.7\](This counts as an empty armor slot.)\[/s\]
 - **Mechanics**:
 ```gon
 weightless true
@@ -2703,7 +2703,7 @@ weightless true
 
 ### Prayer Beads (`PrayerBeads`)
 - **Kind**: `neck` | **Rarity**: `rare` | **Set**: `[Monk, Twine]`
-- **Description**: Each time you take damage, gain +3 Brace until your next turn. [s:.7](This counts as an empty armor slot.)[/s]
+- **Description**: Each time you take damage, gain +3 Brace until your next turn. \[s:.7\](This counts as an empty armor slot.)\[/s\]
 - **Mechanics**:
 ```gon
 weightless true
@@ -2758,7 +2758,7 @@ shield 3
 
 ### Scrapper's Backpack (`ScrappersBackpack`)
 - **Kind**: `neck` | **Rarity**: `rare` | **Set**: `[Tinkerer, Survivalist]`
-- **Description**: When you break an item, recover it at the end of the battle with 1 durability. [s:.7](Excludes temporary items)[/s]
+- **Description**: When you break an item, recover it at the end of the battle with 1 durability. \[s:.7\](Excludes temporary items)\[/s\]
 - **Mechanics**:
 ```gon
 passives {
@@ -3913,7 +3913,7 @@ passives {
 
 ### Persuasion Device (`PersuasionDevice`)
 - **Kind**: `weapon` | **Rarity**: `sidequest` | **Set**: `None`
-- **Description**: Side Quest Item. Use to permanently charm a non-boss enemy. It joins your party. [s:.7](Usable once per battle.)[/s]
+- **Description**: Side Quest Item. Use to permanently charm a non-boss enemy. It joins your party. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 quest_item true
@@ -3924,7 +3924,7 @@ quest_item true
 
 ### PersuasionDevice_Fixed (`PersuasionDevice_Fixed`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `None`
-- **Description**: Use to permanently charm a non-boss enemy. It joins your party. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use to permanently charm a non-boss enemy. It joins your party. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 variant_of PersuasionDevice
@@ -4095,7 +4095,7 @@ quest_item true
 
 ### Party Detonator (Fixed) (`PartyDetonator_Fixed`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `None`
-- **Description**: Use: Explode a random unit within a target radius. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Explode a random unit within a target radius. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_PartyDetonatorFixed
@@ -4114,7 +4114,7 @@ quest_item true
 
 ### Amplified Air Horn (`AirHorn_Fixed`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `None`
-- **Description**: Use: Apply Madness to a unit within 5 tiles in your line of sight. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Apply Madness to a unit within 5 tiles in your line of sight. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_AirHornFixed
@@ -4266,7 +4266,7 @@ quest_item true
 
 ### Stopwatch (Fixed) (`Stopwatch_Fixed`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `None`
-- **Description**: Use: You or a target unit takes an AI controlled bonus turn. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: You or a target unit takes an AI controlled bonus turn. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_StopwatchFixed
@@ -4669,7 +4669,7 @@ durability 4
 
 ### Rotten Meat (`RottenMeat`)
 - **Kind**: `trinket` | **Rarity**: `consumable_rare` | **Set**: `[Rotten, Meat]`
-- **Description**: Use: Gain Poison 1, then your basic attack becomes Puke Shot. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Gain Poison 1, then your basic attack becomes Puke Shot. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 consumable true
@@ -5216,7 +5216,7 @@ cursed true
 
 ### Vibrating Meteorite (`VibratingMeteorite`)
 - **Kind**: `trinket` | **Rarity**: `rare` | **Set**: `None`
-- **Description**: This item loses 1 of each stat at the end of each battle, permanently. [s:.7](This can go negative.)[/s]
+- **Description**: This item loses 1 of each stat at the end of each battle, permanently. \[s:.7\](This can go negative.)\[/s\]
 - **Mechanics**:
 ```gon
 cursed true
@@ -7773,7 +7773,7 @@ quest_item true
 
 ### Black Shard (`BlackShard`)
 - **Kind**: `weapon` | **Rarity**: `quest` | **Set**: `Obelisk`
-- **Description**: Use: Absorb a unit with {aux} or less health to power this item up. Transforms after 20 absorptions. [s:.7](Saves its power across multiple runs.)[/s] [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Absorb a unit with {aux} or less health to power this item up. Transforms after 20 absorptions. \[s:.7\](Saves its power across multiple runs.)\[/s\] \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 quest_item true
@@ -7791,7 +7791,7 @@ quest_item true
 
 ### Glowing Black Shard (`BlackShard_Glowing`)
 - **Kind**: `weapon` | **Rarity**: `quest` | **Set**: `Obelisk`
-- **Description**: Stab it into The Coven!  Use: Deal 5 damage with Lifesteal, inflict Burn 5, and purge all buffs. Instantly kills The Coven. [s:.7](Usable once per battle.)[/s]
+- **Description**: Stab it into The Coven!  Use: Deal 5 damage with Lifesteal, inflict Burn 5, and purge all buffs. Instantly kills The Coven. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 quest_item true
@@ -10259,7 +10259,7 @@ ability tk_CounterfeitCoin
 
 ### Whistle (`Whistle`)
 - **Kind**: `trinket` | **Rarity**: `common` | **Set**: `[Druid, Hunter]`
-- **Description**: Use: Summon a Fly, Maggot or Flea familiar. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Summon a Fly, Maggot or Flea familiar. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability tk_Whistle
@@ -10267,7 +10267,7 @@ ability tk_Whistle
 
 ### Metronome (`Metronome`)
 - **Kind**: `trinket` | **Rarity**: `rare` | **Set**: `Jester`
-- **Description**: Use: Cast a random upgraded spell. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Cast a random upgraded spell. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability tk_Metronome
@@ -10319,7 +10319,7 @@ passives {
 
 ### Rage Juice (`RageJuice`)
 - **Kind**: `trinket` | **Rarity**: `rare` | **Set**: `Fighter`
-- **Description**: Use: Gain +4 [img:str], +4 [img:spd], Brace 2 and Madness for the rest of the battle. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Gain +4 [img:str], +4 [img:spd], Brace 2 and Madness for the rest of the battle. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability tk_RageJuice
@@ -10413,7 +10413,7 @@ passives {
 
 ### Technology (`Technology`)
 - **Kind**: `trinket` | **Rarity**: `rare` | **Set**: `[Cyborg, Bionic]`
-- **Description**: Use: Shoot a laser beam. [s:.7](Usable once per battle.)[/s] Refreshes when affected by Electricity.
+- **Description**: Use: Shoot a laser beam. \[s:.7\](Usable once per battle.)\[/s\] Refreshes when affected by Electricity.
 - **Mechanics**:
 ```gon
 ability tk_Technology
@@ -10438,7 +10438,7 @@ spd 2
 
 ### Red Drink (`RedDrink`)
 - **Kind**: `trinket` | **Rarity**: `uncommon` | **Set**: `None`
-- **Description**: Use: Heal 5 HP. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Heal 5 HP. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability tk_RedDrink
@@ -10446,7 +10446,7 @@ ability tk_RedDrink
 
 ### Green Drink (`GreenDrink`)
 - **Kind**: `trinket` | **Rarity**: `uncommon` | **Set**: `None`
-- **Description**: Use: Gain 5 mana. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Gain 5 mana. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability tk_GreenDrink
@@ -10454,7 +10454,7 @@ ability tk_GreenDrink
 
 ### Purple Drink (`PurpleDrink`)
 - **Kind**: `trinket` | **Rarity**: `uncommon` | **Set**: `None`
-- **Description**: Use: Heal 2 HP, gain 2 mana and +1 [img:shield]. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Heal 2 HP, gain 2 mana and +1 [img:shield]. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability tk_PurpleDrink
@@ -10462,7 +10462,7 @@ ability tk_PurpleDrink
 
 ### Lil' Battery (`LilBattery`)
 - **Kind**: `trinket` | **Rarity**: `rare` | **Set**: `None`
-- **Description**: Use: Refresh all items and spells with a once per battle restriction. Can be used on allies. [s:.7](Usable once per battle. Can't be refreshed.)[/s]
+- **Description**: Use: Refresh all items and spells with a once per battle restriction. Can be used on allies. \[s:.7\](Usable once per battle. Can't be refreshed.)\[/s\]
 - **Mechanics**:
 ```gon
 ability tk_LilBattery
@@ -10486,7 +10486,7 @@ ability tk_RazorBlade
 
 ### Teleport! (`Teleport`)
 - **Kind**: `trinket` | **Rarity**: `rare` | **Set**: `Experimental`
-- **Description**: Use: Teleport to any open tile. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Teleport to any open tile. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability tk_Teleport
@@ -11048,7 +11048,7 @@ ability tk_TankJuice
 
 ### Hunter's Flute (`HuntersFlute`)
 - **Kind**: `trinket` | **Rarity**: `rare` | **Set**: `Hunter`
-- **Description**: Spawn 2-3 random familiars on adjacent tiles. [s:.7](Usable once per battle.)[/s]
+- **Description**: Spawn 2-3 random familiars on adjacent tiles. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability tk_HuntersFlute
@@ -11126,7 +11126,7 @@ durability 2
 
 ### Druid's Whistle (`DruidsWhistle`)
 - **Kind**: `trinket` | **Rarity**: `rare` | **Set**: `Druid`
-- **Description**: Use: Spawn a random animal familiar on an adjacent tile. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Spawn a random animal familiar on an adjacent tile. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability tk_DruidsWhistle
@@ -11238,7 +11238,7 @@ passives {
 
 ### Soul Jar (`SoulJar_Full`)
 - **Kind**: `trinket` | **Rarity**: `very_rare` | **Set**: `None`
-- **Description**: Use: Summon a ghost copy of {aux_cat_name}. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Summon a ghost copy of {aux_cat_name}. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 aux -1
@@ -11494,7 +11494,7 @@ passives {
 
 ### Green Whistle (`GreenWhistle`)
 - **Kind**: `trinket` | **Rarity**: `very_rare` | **Set**: `None`
-- **Description**: Use: Summon a really big Leg. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Summon a really big Leg. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability tk_LegWhistle
@@ -11797,7 +11797,7 @@ passives {
 
 ### The bOx (`TheBoxChest`)
 - **Kind**: `trinket` | **Rarity**: `rare` | **Set**: `Wood`
-- **Description**: Use: Spawn A lost Spirit. This gains +1 use whenever an allied cat dies. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Spawn A lost Spirit. This gains +1 use whenever an allied cat dies. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 durability 1
@@ -11813,7 +11813,7 @@ durability 1
 
 ### The boX (`TheBox`)
 - **Kind**: `trinket` | **Rarity**: `rare` | **Set**: `Steven`
-- **Description**: Use: Revive all bodies, fully heal all units, and clear all status effects. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Revive all bodies, fully heal all units, and clear all status effects. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 durability 4
@@ -12040,7 +12040,7 @@ durability 6
 
 ### Ice Cubes (`IceCubes`)
 - **Kind**: `weapon` | **Rarity**: `uncommon` | **Set**: `Frozen`
-- **Description**: Use: A lobbed attack that Freezes units. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A lobbed attack that Freezes units. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_IceCubes
@@ -12416,7 +12416,7 @@ durability [6 8]
 
 ### Butterfly Knife (`ButterflyKnife`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `Cool`
-- **Description**: Use: A multi-hit melee attack that inflicts Bleed. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A multi-hit melee attack that inflicts Bleed. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_ButterflyKnife
@@ -12442,7 +12442,7 @@ durability [6 9]
 
 ### Bricks (`Bricks`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `Brick`
-- **Description**: Use: A lobbed attack that inflicts Stun. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A lobbed attack that inflicts Stun. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_Bricks
@@ -12450,7 +12450,7 @@ ability wp_Bricks
 
 ### Mjolnir (`Mjolnir`)
 - **Kind**: `weapon` | **Rarity**: `very_rare` | **Set**: `Superhero`
-- **Description**: Use: A ranged attack that passes through units and returns to you after you throw it. At its apex, it deals electric damage. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A ranged attack that passes through units and returns to you after you throw it. At its apex, it deals electric damage. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_Mjolnir
@@ -12503,7 +12503,7 @@ durability [10 16]
 
 ### Crisp Paper (`CrispPaper`)
 - **Kind**: `weapon` | **Rarity**: `uncommon` | **Set**: `Paper`
-- **Description**: Use: A ranged attack that inflicts Bleed 3. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A ranged attack that inflicts Bleed 3. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_CrispPaper
@@ -12511,7 +12511,7 @@ ability wp_CrispPaper
 
 ### Purple Mushroom (`PurpleMushroom`)
 - **Kind**: `weapon` | **Rarity**: `common` | **Set**: `Druid`
-- **Description**: Use: A ranged attack that inflicts Confusion 2. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A ranged attack that inflicts Confusion 2. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 durability [2 4]
@@ -12520,7 +12520,7 @@ durability [2 4]
 
 ### Black Mushroom (`BlackMushroom`)
 - **Kind**: `weapon` | **Rarity**: `common` | **Set**: `Druid`
-- **Description**: Use: A ranged attack that inflicts Weakness 2. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A ranged attack that inflicts Weakness 2. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_BlackMushroom
@@ -12528,7 +12528,7 @@ ability wp_BlackMushroom
 
 ### Red Mushroom (`RedMushroom`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `Druid`
-- **Description**: Use: A ranged attack that inflicts Charm 3. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A ranged attack that inflicts Charm 3. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_RedMushroom
@@ -12536,7 +12536,7 @@ ability wp_RedMushroom
 
 ### Les Toxin (`PoisonVial`)
 - **Kind**: `weapon` | **Rarity**: `common` | **Set**: `Thief`
-- **Description**: Use: A ranged attack that inflicts Poison 2. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A ranged attack that inflicts Poison 2. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_PoisonVial
@@ -12553,7 +12553,7 @@ durability [6 10]
 
 ### Creepy Photo (`CreepyPhoto`)
 - **Kind**: `weapon` | **Rarity**: `uncommon` | **Set**: `None`
-- **Description**: Use: A melee attack that inflicts Fear 1. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A melee attack that inflicts Fear 1. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_CreepyPhoto
@@ -12561,7 +12561,7 @@ ability wp_CreepyPhoto
 
 ### Finger Bone (`FingerBone`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `Bone`
-- **Description**: Use: A straight ranged attack that inflicts Immobile 3. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A straight ranged attack that inflicts Immobile 3. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_FingerBone
@@ -12594,7 +12594,7 @@ durability [6 8]
 
 ### Staff of Flame (`StaffOfFlame`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `Mage`
-- **Description**: Use: A fire attack that inflicts Burn 5. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A fire attack that inflicts Burn 5. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_StaffOfFlame
@@ -12622,7 +12622,7 @@ ability wp_BattleAxe
 
 ### Anointing Oil (`AnointingOil`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `Cleric`
-- **Description**: Use: Cleanse debuffs from an adjacent unit or yourself. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Cleanse debuffs from an adjacent unit or yourself. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_AnointingOil
@@ -12630,7 +12630,7 @@ ability wp_AnointingOil
 
 ### Girder (`Girder`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `Tank`
-- **Description**: Use: A melee attack with Knockback 10 and Chain Knockback. [s:.7](Usable once per battle.)[/s] Passive: +1 Brace while this weapon is usable.
+- **Description**: Use: A melee attack with Knockback 10 and Chain Knockback. \[s:.7\](Usable once per battle.)\[/s\] Passive: +1 Brace while this weapon is usable.
 - **Mechanics**:
 ```gon
 ability wp_Girder
@@ -12643,7 +12643,7 @@ ability wp_Girder
 
 ### Arrow of Infinity (`InfinityArrow`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `Hunter`
-- **Description**: Use: Your next basic attack has +5 range, +100% Crit Chance, ignores shield and can't miss. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Your next basic attack has +5 range, +100% Crit Chance, ignores shield and can't miss. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_InfinityArrow
@@ -12756,7 +12756,7 @@ ability wp_GrapplingHook
 
 ### Chainsaw (`Chainsaw`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `Cool`
-- **Description**: Use: A multi-hit melee attack with a 25% chance to Cleave. [s:.7](Usable once per battle.)[/s] Passive: +2 Thorns.
+- **Description**: Use: A multi-hit melee attack with a 25% chance to Cleave. \[s:.7\](Usable once per battle.)\[/s\] Passive: +2 Thorns.
 - **Mechanics**:
 ```gon
 equip_sound SE_CatWeaponPoke_Chainsaw
@@ -12782,7 +12782,7 @@ ability wp_BurningCoal
 
 ### Rainbow Remote (`RainbowRemote`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `Experimental`
-- **Description**: Use: Cast a targeted random spell. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Cast a targeted random spell. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_RainbowRemote
@@ -12807,7 +12807,7 @@ durability 9
 
 ### Meat Cleaver (`MeatCleaver`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `Butcher`
-- **Description**: Use: A melee attack with Cleave that deals damage equal to half the target's current HP. Bosses take 1/6th of their current HP in damage instead. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A melee attack with Cleave that deals damage equal to half the target's current HP. Bosses take 1/6th of their current HP in damage instead. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_MeatCleaver
@@ -12872,7 +12872,7 @@ durability 5
 
 ### Frayed Wires (`FreyedWires`)
 - **Kind**: `weapon` | **Rarity**: `uncommon` | **Set**: `None`
-- **Description**: Use: An electric melee attack that can chain through adjacent units. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: An electric melee attack that can chain through adjacent units. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_FreyedWires
@@ -12880,7 +12880,7 @@ ability wp_FreyedWires
 
 ### Old Extinguisher (`OldExtinguisher`)
 - **Kind**: `weapon` | **Rarity**: `uncommon` | **Set**: `None`
-- **Description**: Use: Extinguishes fires in a cone with Knockback 5. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Extinguishes fires in a cone with Knockback 5. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_OldExtinguisher
@@ -12998,7 +12998,7 @@ lck 2
 
 ### Flower Mix (`FlowerMix`)
 - **Kind**: `weapon` | **Rarity**: `uncommon` | **Set**: `Flower`
-- **Description**: Use: Plant flowers in a large area.  [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Plant flowers in a large area.  \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_FlowerMix
@@ -13006,7 +13006,7 @@ ability wp_FlowerMix
 
 ### Puzzle Box (`PuzzleBox`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `[Gimp, Demonic]`
-- **Description**: Use: Shoot hooks in 8 directions that inflict Bleed 1 and pull units towards you. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Shoot hooks in 8 directions that inflict Bleed 1 and pull units towards you. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_PuzzleBox
@@ -13029,7 +13029,7 @@ ability wp_Crowbar
 
 ### Fire Flower (`FireFlower`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `Flower`
-- **Description**: Use: Shoot a fireball that inflicts Burn 2 in an area. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Shoot a fireball that inflicts Burn 2 in an area. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_FireFlower
@@ -13056,7 +13056,7 @@ ability wp_CarBattery
 
 ### Modeling Clay (`ModelingClay`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `DirtClod`
-- **Description**: {str_aux_item_desc} [s:.7](This changes into a different weapon each time it's used.)[/s]
+- **Description**: {str_aux_item_desc} \[s:.7\](This changes into a different weapon each time it's used.)\[/s\]
 - **Mechanics**:
 ```gon
 str_aux ModelingClay_Default
@@ -13100,7 +13100,7 @@ durability 1
 
 ### Slag Might (`SlagMight`)
 - **Kind**: `weapon` | **Rarity**: `very_rare` | **Set**: `Rock`
-- **Description**: Use: A melee attack with Bruise 1 and Knockback 5. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A melee attack with Bruise 1 and Knockback 5. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_SlagMight
@@ -13124,7 +13124,7 @@ ability wp_AlienBlaster
 
 ### Polymorph Remote (`PolymorphRemote`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `None`
-- **Description**: Use: Transform a non-boss enemy into another random enemy from the same chapter. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Transform a non-boss enemy into another random enemy from the same chapter. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_PolymorphRemote
@@ -13141,7 +13141,7 @@ durability [4, 6]
 
 ### Ether Soaked Rag (`EtherSoakedRag`)
 - **Kind**: `weapon` | **Rarity**: `uncommon` | **Set**: `Rag`
-- **Description**: Use: Put an adjacent unit or yourself to sleep. That unit gets +5 Health Regen and +5 Mana Regen until it wakes up. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Put an adjacent unit or yourself to sleep. That unit gets +5 Health Regen and +5 Mana Regen until it wakes up. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_EtherSoakedRag
@@ -13157,7 +13157,7 @@ ability wp_DeathsScythe
 
 ### Necronomicon (`Necronomicon`)
 - **Kind**: `weapon` | **Rarity**: `uncommon` | **Set**: `[Necromancer, Demonic]`
-- **Description**: Use: Unearth 5 zombies. These zombies have a 33% chance of having Madness. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Unearth 5 zombies. These zombies have a 33% chance of having Madness. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_Necronomicon
@@ -13306,7 +13306,7 @@ randomize_piece_frames true
 
 ### IrradiatedObject_Burn (`IrradiatedObject_Burn`)
 - **Kind**: `Unknown` | **Rarity**: `Unknown` | **Set**: `None`
-- **Description**: Use: A melee attack that inflicts Burn 1. {str_aux_item_desc} [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A melee attack that inflicts Burn 1. {str_aux_item_desc} \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 variant_of IrradiatedObject
@@ -13315,7 +13315,7 @@ variant_of IrradiatedObject
 
 ### IrradiatedObject_Stun (`IrradiatedObject_Stun`)
 - **Kind**: `Unknown` | **Rarity**: `Unknown` | **Set**: `None`
-- **Description**: Use: A melee attack that inflicts Stun 1. {str_aux_item_desc} [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A melee attack that inflicts Stun 1. {str_aux_item_desc} \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 variant_of IrradiatedObject
@@ -13324,7 +13324,7 @@ variant_of IrradiatedObject
 
 ### IrradiatedObject_Bleed (`IrradiatedObject_Bleed`)
 - **Kind**: `Unknown` | **Rarity**: `Unknown` | **Set**: `None`
-- **Description**: Use: A melee attack that inflicts Bleed 1. {str_aux_item_desc} [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A melee attack that inflicts Bleed 1. {str_aux_item_desc} \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 variant_of IrradiatedObject
@@ -13333,7 +13333,7 @@ variant_of IrradiatedObject
 
 ### IrradiatedObject_Bruise (`IrradiatedObject_Bruise`)
 - **Kind**: `Unknown` | **Rarity**: `Unknown` | **Set**: `None`
-- **Description**: Use: A melee attack that inflicts Bruise 1. {str_aux_item_desc} [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A melee attack that inflicts Bruise 1. {str_aux_item_desc} \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 variant_of IrradiatedObject
@@ -13342,7 +13342,7 @@ variant_of IrradiatedObject
 
 ### IrradiatedObject_Poison (`IrradiatedObject_Poison`)
 - **Kind**: `Unknown` | **Rarity**: `Unknown` | **Set**: `None`
-- **Description**: Use: A melee attack that inflicts Poison 1. {str_aux_item_desc} [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A melee attack that inflicts Poison 1. {str_aux_item_desc} \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 variant_of IrradiatedObject
@@ -13351,7 +13351,7 @@ variant_of IrradiatedObject
 
 ### IrradiatedObject_Sleep (`IrradiatedObject_Sleep`)
 - **Kind**: `Unknown` | **Rarity**: `Unknown` | **Set**: `None`
-- **Description**: Use: A melee attack that inflicts Sleep 1. {str_aux_item_desc} [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A melee attack that inflicts Sleep 1. {str_aux_item_desc} \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 variant_of IrradiatedObject
@@ -13360,7 +13360,7 @@ variant_of IrradiatedObject
 
 ### IrradiatedObject_Fear (`IrradiatedObject_Fear`)
 - **Kind**: `Unknown` | **Rarity**: `Unknown` | **Set**: `None`
-- **Description**: Use: A melee attack that inflicts Fear 1. {str_aux_item_desc} [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A melee attack that inflicts Fear 1. {str_aux_item_desc} \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 variant_of IrradiatedObject
@@ -13369,7 +13369,7 @@ variant_of IrradiatedObject
 
 ### IrradiatedObject_Charmed (`IrradiatedObject_Charmed`)
 - **Kind**: `Unknown` | **Rarity**: `Unknown` | **Set**: `None`
-- **Description**: Use: A melee attack that inflicts Charmed 1. {str_aux_item_desc} [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A melee attack that inflicts Charmed 1. {str_aux_item_desc} \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 variant_of IrradiatedObject
@@ -13378,7 +13378,7 @@ variant_of IrradiatedObject
 
 ### IrradiatedObject_Weakness (`IrradiatedObject_Weakness`)
 - **Kind**: `Unknown` | **Rarity**: `Unknown` | **Set**: `None`
-- **Description**: Use: A melee attack that inflicts Weakness 1. {str_aux_item_desc} [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A melee attack that inflicts Weakness 1. {str_aux_item_desc} \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 variant_of IrradiatedObject
@@ -13387,7 +13387,7 @@ variant_of IrradiatedObject
 
 ### IrradiatedObject_Confusion (`IrradiatedObject_Confusion`)
 - **Kind**: `Unknown` | **Rarity**: `Unknown` | **Set**: `None`
-- **Description**: Use: A melee attack that inflicts Confusion 1. {str_aux_item_desc} [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A melee attack that inflicts Confusion 1. {str_aux_item_desc} \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 variant_of IrradiatedObject
@@ -13396,7 +13396,7 @@ variant_of IrradiatedObject
 
 ### Steel Ball (`SteelBall`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `None`
-- **Description**: Use: Summon an invulnerable Fly familiar. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Summon an invulnerable Fly familiar. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_SteelBall
@@ -13404,7 +13404,7 @@ ability wp_SteelBall
 
 ### USA Shield (`USAShield`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `Superhero`
-- **Description**: Use: A ranged attack that inflicts Stun. [s:.7](Usable once per battle.)[/s] Passive: +2 Brace while this weapon is usable.
+- **Description**: Use: A ranged attack that inflicts Stun. \[s:.7\](Usable once per battle.)\[/s\] Passive: +2 Brace while this weapon is usable.
 - **Mechanics**:
 ```gon
 passives {
@@ -13453,7 +13453,7 @@ ability wp_BucketOfLard
 
 ### Bloody Knife (`BloodyButterflyKnife`)
 - **Kind**: `weapon` | **Rarity**: `very_rare` | **Set**: `None`
-- **Description**: Use: A multi-hit melee attack with Lifesteal that inflicts Bleed. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A multi-hit melee attack with Lifesteal that inflicts Bleed. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_BloodyButterflyKnife
@@ -13609,7 +13609,7 @@ ability wp_Stoolatk
 
 ### Alien Tech (`AlienTech`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `Space`
-- **Description**: Use: Target an area. Unleash a hyper beam attack in that area at the start of your next turn. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Target an area. Unleash a hyper beam attack in that area at the start of your next turn. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability AlienBeam
@@ -13617,7 +13617,7 @@ ability AlienBeam
 
 ### Stacy 100 (`Stacy100`)
 - **Kind**: `weapon` | **Rarity**: `very_rare` | **Set**: `None`
-- **Description**: Use: Spawn a Stacy. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Spawn a Stacy. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_SpawnStacy
@@ -13662,7 +13662,7 @@ ability wp_Fate
 
 ### Mammoth Tusk (`MammothTusk`)
 - **Kind**: `weapon` | **Rarity**: `very_rare` | **Set**: `Wooly`
-- **Description**: Use: A melee attack that inflicts Bruise 2 and Confusion. Become Drowsy after use. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: A melee attack that inflicts Bruise 2 and Confusion. Become Drowsy after use. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_TuskThrow
@@ -13670,7 +13670,7 @@ ability wp_TuskThrow
 
 ### American Flag (`AmericanFlag`)
 - **Kind**: `weapon` | **Rarity**: `rare` | **Set**: `None`
-- **Description**: Use: Force a unit to attack one of its enemies. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Force a unit to attack one of its enemies. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 str 1
@@ -13757,7 +13757,7 @@ ability wp_Manhole
 
 ### Tina's Larynx (`TinasLarynx`)
 - **Kind**: `weapon` | **Rarity**: `very_rare` | **Set**: `Guts`
-- **Description**: Use: Inflict Fear on all enemies. [s:.7](Usable once per battle.)[/s]
+- **Description**: Use: Inflict Fear on all enemies. \[s:.7\](Usable once per battle.)\[/s\]
 - **Mechanics**:
 ```gon
 ability wp_TinaScream

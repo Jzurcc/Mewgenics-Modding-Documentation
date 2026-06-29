@@ -1,13 +1,13 @@
 # Mewgenics Modding Documentation
 
-After days of gruesome struggling with the Mewgenics base resources, I welcome you to my personal compilation of references for Mewgenics modding! What simply started as a simple list for my studies now became an exhaustive compilation of what is found in the game files.
+After a gruesome struggling with the Mewgenics base resources, I welcome you to my personal compilation of references for Mewgenics modding! What simply started as a simple list for my studies now became an exhaustive compilation of what is found in the game files.
 
 > [!WARNING]
 > **Disclaimer:** There are thousands of keys and objects in Mewgenics, and I've decided to use AI to help define them. While provided with deep contextual data, they are not guaranteed to be perfectly accurate. Furthermore, I will most likely not actively maintain this documentation for long, so treat it as a quick library of sort rather than the sole source of truth. You WILL have to study the base files on your own and verify these implementations within the game yourself.
 
 For a more continuously updated resource on engine scripting, please refer to **[Ombrellus' GON Scripting Resources](https://github.com/ombrellus/MewgenicsScriptResources)**. They actively test out engine resources, but because they are human-tested before adding, they might not have a complete list of syntax and possible keys as of yet (This has all 3,436 keys while they have about 1.3k verified as of June).
 
-To start, Mewgenics uses a proprietary engine architecture and data serialization format known as Glaiel Object Notation (GON). To accommodate this, the documentation is divided into four functional areas: **Theory**, **Syntax**, **Practice**, and **Reference**. Of these, mod developers will probably be most interested in the [**`Schema/`**](./Schema/) directory, and is where you will spend the majority of your time during mod development.
+To start, Mewgenics uses a proprietary engine architecture and data serialization format known as Glaiel Object Notation (GON). To accommodate this, the documentation is divided into four functional areas: **Theory**, **Syntax**, **Practice**, and **Reference**. Of these, most developers will probably be most interested in the [**`Schema/`**](./Schema/) directory, and is where you will spend the majority of your time during mod development.
 
 Also, be sure to open the outline in Github for easier navigation!
 <img width="1882" height="136" alt="image" src="https://github.com/user-attachments/assets/d0052a13-da26-45d1-a5fd-e72b44b277bf" />
@@ -134,7 +134,7 @@ Ensure your development environment is properly configured before writing code:
   </tr>
   <tr>
     <td><strong>Statuses and Injuries</strong></td>
-    <td><a href="./Directory/Statuses_and_Injuries/Disorders.md">Disorders</a> • <a href="./Directory/Statuses_and_Injuries/Injuries.md">Injuries</a> • <a href="./Directory/Statuses_and_Injuries/Status_Effect_Keywords.md">Status Effect Keywords</a> • <a href="./Directory/Statuses_and_Injuries/Statuses.md">Statuses</a></td>
+    <td><a href="./Directory/Statuses_and_Injuries/Injuries.md">Injuries</a> • <a href="./Directory/Statuses_and_Injuries/Status_Effect_Keywords.md">Status Effect Keywords</a></td>
   </tr>
   <tr>
     <td><strong>System and Engine</strong></td>

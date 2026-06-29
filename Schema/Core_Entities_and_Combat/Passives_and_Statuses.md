@@ -71,7 +71,6 @@ Putrefy {
 ## Associated Directory Files
 To see extracted instances of this schema in the base game, refer to:
 - [`Passives.md`](../../Directory/Items_and_Passives/Passives.md)
-- [`Statuses.md`](../../Directory/Statuses_and_Injuries/Statuses.md)
 
 ---
 

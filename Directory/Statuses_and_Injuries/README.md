@@ -10,7 +10,7 @@ description: "Extracted base game data for status effects and disorders"
 
 ## File Index
 
-- [`Disorders.md`](./Disorders.md) - Extracted from `data/disorders`
+ - Extracted from `data/disorders`
 - [`Injuries.md`](./Injuries.md) - Extracted from `data/injuries.gon`
 - [`Status_Effect_Keywords.md`](./Status_Effect_Keywords.md) - Extracted from `data/keyword_tooltips.gon`
-- [`Statuses.md`](./Statuses.md) - Extracted from `data/statuses`
+ - Extracted from `data/statuses`

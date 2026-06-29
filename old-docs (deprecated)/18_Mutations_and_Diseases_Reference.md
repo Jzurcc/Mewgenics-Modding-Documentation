@@ -452,7 +452,7 @@ The tables below are automatically extracted from the game's `.gon` files, outli
 | SensoryOverloadNeck | Sensory Overload | All but your neck slot is locked. Your neck item's effects are tripled!  | `NeckArmorPassiveMultiplierBonus 2` |
 | SensoryOverloadWeapon | Sensory Overload | All but your weapon slot is locked. Your weapon's effects are tripled!  | `WeaponPassiveMultiplierBonus 2<br>        WeaponActiveEffectsMultiplierBonus 2` |
 | EternalYouth | Eternal Youth | You are a kitten... forever! +1 [img:comfort], +1 [img:stimulation], +1 [img:appeal] | `PermanentKitten 1<br>        ChangeTauntPriority -1<br><br>        FurnitureStats {<br>            Comfort 1<br>            Stimulation 1<br>            Appeal 1<br>        }` |
-| DejaVu | Deja Vu | 10% chance to cancel actions. [s:.7]Deja Vu will go away when this cat returns to the house.[/s] | `DejaVu 10%` |
+| DejaVu | Deja Vu | 10% chance to cancel actions. [s:.7]Deja Vu will go away when this cat returns to the house.\[/s\] | `DejaVu 10%` |
 | DownsSyndrome | Down's Syndrome |  |  |
 | Tachysensia | Tachysensia |  |  |
 | SavantSyndrome | Savant Syndrome |  |  |

@@ -106,7 +106,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related keys. | 2418 | `damage_instance`<br>`spell`<br>`self_damage` |
+| [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 2418 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 2337 | `{ . . . }` |
 | [`meta`](./Abilities_and_Spells.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 2328 | `{ . . . }` |
 | [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 2168 | `dash_attack`<br>`jump_attack`<br>`jump_move` |

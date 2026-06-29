@@ -73,7 +73,6 @@ str {
 ## Associated Directory Files
 To see extracted instances of this schema in the base game, refer to:
 - [`Injuries.md`](../../Directory/Statuses_and_Injuries/Injuries.md)
-- [`Disorders.md`](../../Directory/Statuses_and_Injuries/Disorders.md)
 
 ---
 

@@ -22,7 +22,7 @@
   </tr>
   <tr>
     <td><strong>Statuses and Injuries</strong></td>
-    <td><a href="../Statuses_and_Injuries/Disorders.md">Disorders</a> • <a href="../Statuses_and_Injuries/Injuries.md">Injuries</a> • <a href="../Statuses_and_Injuries/Status_Effect_Keywords.md">Status Effect Keywords</a> • <a href="../Statuses_and_Injuries/Statuses.md">Statuses</a></td>
+    <td><a href="../Statuses_and_Injuries/Injuries.md">Injuries</a> • <a href="../Statuses_and_Injuries/Status_Effect_Keywords.md">Status Effect Keywords</a></td>
   </tr>
   <tr>
     <td><strong>System and Engine</strong></td>
@@ -16194,7 +16194,7 @@ TinkererCraft {
 ### `TinkererThrow`
 **Name:** Throw Weapon  
 **Description:** Throw your weapon at a unit.
-[s:.7]This breaks the weapon.[/s]  
+[s:.7]This breaks the weapon.\[/s\]  
 **Source:** `basic_attacks.gon`  
 
 ```
@@ -16408,7 +16408,7 @@ BasicHook {
 ### `BasicMagicMissile`
 **Name:** Magic Missile  
 **Description:** Shoot an infinite-range projectile that can't miss.
-[s:.7](This attack's damage scales with your [img:int])[/s]  
+\[s:.7\](This attack's damage scales with your [img:int])\[/s\]  
 **Source:** `basic_attacks.gon`  
 
 ```

@@ -22,7 +22,7 @@
   </tr>
   <tr>
     <td><strong>Statuses and Injuries</strong></td>
-    <td><a href="../Statuses_and_Injuries/Disorders.md">Disorders</a> • <a href="../Statuses_and_Injuries/Injuries.md">Injuries</a> • <a href="../Statuses_and_Injuries/Status_Effect_Keywords.md">Status Effect Keywords</a> • <a href="../Statuses_and_Injuries/Statuses.md">Statuses</a></td>
+    <td><a href="../Statuses_and_Injuries/Injuries.md">Injuries</a> • <a href="../Statuses_and_Injuries/Status_Effect_Keywords.md">Status Effect Keywords</a></td>
   </tr>
   <tr>
     <td><strong>System and Engine</strong></td>
@@ -1165,8 +1165,8 @@ guillotina_2 {
 
 **Localization Strings:**
 - `BOSS_GUILLOTINA_3_QUOTE_1`: "[a:shake]*flies buzzing*[/a]"
-- `BOSS_GUILLOTINA_3_QUOTE_2`: "[a:shake]*squeching and gurgling*[/s]"
-- `BOSS_GUILLOTINA_3_QUOTE_3`: "[a:shake]*stomach growling*[/s]"
+- `BOSS_GUILLOTINA_3_QUOTE_2`: "[a:shake]*squeching and gurgling*\[/s\]"
+- `BOSS_GUILLOTINA_3_QUOTE_3`: "[a:shake]*stomach growling*\[/s\]"
 
 ```
 guillotina_3 {
@@ -1211,7 +1211,7 @@ pyrophina {
 
 **Localization Strings:**
 - `BOSS_ZARATANA_QUOTE_1`: "[a:shake]GRUMBLE GRUMBLE![/a]"
-- `BOSS_ZARATANA_QUOTE_2`: "[a:shake]GRUNT, SNORT[/s]"
+- `BOSS_ZARATANA_QUOTE_2`: "[a:shake]GRUNT, SNORT\[/s\]"
 
 ```
 zaratana {

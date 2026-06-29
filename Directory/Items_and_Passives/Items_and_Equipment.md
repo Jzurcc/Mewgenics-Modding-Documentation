@@ -22,7 +22,7 @@
   </tr>
   <tr>
     <td><strong>Statuses and Injuries</strong></td>
-    <td><a href="../Statuses_and_Injuries/Disorders.md">Disorders</a> • <a href="../Statuses_and_Injuries/Injuries.md">Injuries</a> • <a href="../Statuses_and_Injuries/Status_Effect_Keywords.md">Status Effect Keywords</a> • <a href="../Statuses_and_Injuries/Statuses.md">Statuses</a></td>
+    <td><a href="../Statuses_and_Injuries/Injuries.md">Injuries</a> • <a href="../Statuses_and_Injuries/Status_Effect_Keywords.md">Status Effect Keywords</a></td>
   </tr>
   <tr>
     <td><strong>System and Engine</strong></td>
@@ -3122,7 +3122,7 @@ ManTie {
 **Name:** Flower Mask  
 **Description:** Your basic attack has a +5% chance to inflict Entangled.
 Plants flowers on each tile you move through.
-[s:.7](Stacking this effect plants flowers in a wider area.)[/s]  
+\[s:.7\](Stacking this effect plants flowers in a wider area.)\[/s\]  
 **Source:** `armor_sets.gon`  
 
 ```
@@ -3152,7 +3152,7 @@ FlowerMask {//todo needs rework
 **Name:** Flower Hat  
 **Description:** Your basic attack has a +5% chance to inflict Entangled.
 Plants flowers on each tile you move through.
-[s:.7](Stacking this effect plants flowers in a wider area.)[/s]  
+\[s:.7\](Stacking this effect plants flowers in a wider area.)\[/s\]  
 **Source:** `armor_sets.gon`  
 
 ```
@@ -3182,7 +3182,7 @@ FlowerHat {
 **Name:** Flower Necklace  
 **Description:** Your basic attack has a +5% chance to inflict Entangled.
 Plants flowers on each tile you move through.
-[s:.7](Stacking this effect plants flowers in a wider area.)[/s]  
+\[s:.7\](Stacking this effect plants flowers in a wider area.)\[/s\]  
 **Source:** `armor_sets.gon`  
 
 ```
@@ -5254,7 +5254,7 @@ LeechNecklace {
 ### `FaceBrand`
 **Name:** Face Brand  
 **Description:** Each time you use your basic attack, gain +1 [img:shield].
-[s:.7](This counts as an empty armor slot.)[/s]  
+\[s:.7\](This counts as an empty armor slot.)\[/s\]  
 **Source:** `armor_sets.gon`  
 
 ```
@@ -5281,7 +5281,7 @@ FaceBrand {
 **Name:** Head Brand  
 **Description:** Your movement action is Jump.
 If you land on a unit, deal 1 damage to it and bounce to an adjacent tile.
-[s:.7](This counts as an empty armor slot.)[/s]  
+\[s:.7\](This counts as an empty armor slot.)\[/s\]  
 **Source:** `armor_sets.gon`  
 
 ```
@@ -5305,7 +5305,7 @@ HeadBrand {
 ### `PrayerBeads`
 **Name:** Prayer Beads  
 **Description:** Each time you take damage, gain +3 Brace until your next turn.
-[s:.7](This counts as an empty armor slot.)[/s]  
+\[s:.7\](This counts as an empty armor slot.)\[/s\]  
 **Source:** `armor_sets.gon`  
 
 ```
@@ -5400,7 +5400,7 @@ ScrappersHat {
 ### `ScrappersBackpack`
 **Name:** Scrapper's Backpack  
 **Description:** When you break an item, recover it at the end of the battle with 1 durability.
-[s:.7](Excludes temporary items)[/s]  
+\[s:.7\](Excludes temporary items)\[/s\]  
 **Source:** `armor_sets.gon`  
 
 ```
@@ -7628,7 +7628,7 @@ CopycatScarf {
 ### `PersuasionDevice`
 **Name:** Persuasion Device  
 **Description:** Side Quest Item. Use to permanently charm a non-boss enemy. It joins your party.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `beanies_quest_items.gon`  
 
 ```
@@ -7651,7 +7651,7 @@ PersuasionDevice {
 
 ### `PersuasionDevice_Fixed`
 **Description:** Use to permanently charm a non-boss enemy. It joins your party.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `beanies_quest_items.gon`  
 
 ```
@@ -7986,7 +7986,7 @@ PartyDetonator {
 ### `PartyDetonator_Fixed`
 **Name:** Party Detonator (Fixed)  
 **Description:** Use: Explode a random unit within a target radius.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `beanies_quest_items.gon`  
 
 ```
@@ -8029,7 +8029,7 @@ AirHorn {
 ### `AirHorn_Fixed`
 **Name:** Amplified Air Horn  
 **Description:** Use: Apply Madness to a unit within 5 tiles in your line of sight.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `beanies_quest_items.gon`  
 
 ```
@@ -8345,7 +8345,7 @@ Stopwatch {
 ### `Stopwatch_Fixed`
 **Name:** Stopwatch (Fixed)  
 **Description:** Use: You or a target unit takes an AI controlled bonus turn.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `beanies_quest_items.gon`  
 
 ```
@@ -9145,7 +9145,7 @@ SuperBandage {
 ### `RottenMeat`
 **Name:** Rotten Meat  
 **Description:** Use: Gain Poison 1, then your basic attack becomes Puke Shot.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `consumables.gon`  
 
 ```
@@ -10260,7 +10260,7 @@ PutridPile {
 ### `VibratingMeteorite`
 **Name:** Vibrating Meteorite  
 **Description:** This item loses 1 of each stat at the end of each battle, permanently.
-[s:.7](This can go negative.)[/s]  
+\[s:.7\](This can go negative.)\[/s\]  
 **Source:** `cursed_items.gon`  
 
 ```
@@ -14929,8 +14929,8 @@ ScaldingOrb {
 **Name:** Black Shard  
 **Description:** Use: Absorb a unit with {aux} or less health to power this item up.
 Transforms after 20 absorptions.
-[s:.7](Saves its power across multiple runs.)[/s]
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Saves its power across multiple runs.)\[/s\]
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `legacy_quest_items.gon`  
 
 ```
@@ -14964,7 +14964,7 @@ BlackShard {
 **Name:** Glowing Black Shard  
 **Description:** Stab it into The Coven! 
 Use: Deal 5 damage with Lifesteal, inflict Burn 5, and purge all buffs. Instantly kills The Coven.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `legacy_quest_items.gon`  
 
 ```
@@ -19665,7 +19665,7 @@ CounterfeitCoin {
 ### `Whistle`
 **Name:** Whistle  
 **Description:** Use: Summon a Fly, Maggot or Flea familiar.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `trinkets.gon`  
 
 ```
@@ -19686,7 +19686,7 @@ Whistle {//refresh when a familiar dies
 ### `Metronome`
 **Name:** Metronome  
 **Description:** Use: Cast a random upgraded spell.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `trinkets.gon`  
 
 ```
@@ -19788,7 +19788,7 @@ LuckyCoinPurse {
 ### `RageJuice`
 **Name:** Rage Juice  
 **Description:** Use: Gain +4 [img:str], +4 [img:spd], Brace 2 and Madness for the rest of the battle.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `trinkets.gon`  
 
 ```
@@ -19951,7 +19951,7 @@ Natural20 {
 ### `Technology`
 **Name:** Technology  
 **Description:** Use: Shoot a laser beam.
-[s:.7](Usable once per battle.)[/s]
+\[s:.7\](Usable once per battle.)\[/s\]
 Refreshes when affected by Electricity.  
 **Source:** `trinkets.gon`  
 
@@ -20007,7 +20007,7 @@ Spring {
 ### `RedDrink`
 **Name:** Red Drink  
 **Description:** Use: Heal 5 HP.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `trinkets.gon`  
 
 ```
@@ -20027,7 +20027,7 @@ RedDrink {
 ### `GreenDrink`
 **Name:** Green Drink  
 **Description:** Use: Gain 5 mana.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `trinkets.gon`  
 
 ```
@@ -20047,7 +20047,7 @@ GreenDrink {
 ### `PurpleDrink`
 **Name:** Purple Drink  
 **Description:** Use: Heal 2 HP, gain 2 mana and +1 [img:shield].
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `trinkets.gon`  
 
 ```
@@ -20068,7 +20068,7 @@ PurpleDrink {
 **Name:** Lil' Battery  
 **Description:** Use: Refresh all items and spells with a once per battle restriction.
 Can be used on allies.
-[s:.7](Usable once per battle. Can't be refreshed.)[/s]  
+\[s:.7\](Usable once per battle. Can't be refreshed.)\[/s\]  
 **Source:** `trinkets.gon`  
 
 ```
@@ -20126,7 +20126,7 @@ RazorBlade {
 ### `Teleport`
 **Name:** Teleport!  
 **Description:** Use: Teleport to any open tile.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `trinkets.gon`  
 
 ```
@@ -21219,7 +21219,7 @@ TankJuice {
 ### `HuntersFlute`
 **Name:** Hunter's Flute  
 **Description:** Spawn 2-3 random familiars on adjacent tiles.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `trinkets.gon`  
 
 ```
@@ -21379,7 +21379,7 @@ SackOfMeat {
 ### `DruidsWhistle`
 **Name:** Druid's Whistle  
 **Description:** Use: Spawn a random animal familiar on an adjacent tile.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `trinkets.gon`  
 
 ```
@@ -21611,7 +21611,7 @@ SoulJar {
 ### `SoulJar_Full`
 **Name:** Soul Jar  
 **Description:** Use: Summon a ghost copy of {aux_cat_name}.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `trinkets.gon`  
 
 ```
@@ -22100,7 +22100,7 @@ SnakeEyes {
 ### `GreenWhistle`
 **Name:** Green Whistle  
 **Description:** Use: Summon a really big Leg.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `trinkets.gon`  
 
 ```
@@ -22713,7 +22713,7 @@ TheBoxCardboard {
 ### `TheBoxChest`
 **Name:** The bOx  
 **Description:** Use: Spawn A lost Spirit. This gains +1 use whenever an allied cat dies.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `trinkets.gon`  
 
 ```
@@ -22744,7 +22744,7 @@ TheBoxChest {
 ### `TheBox`
 **Name:** The boX  
 **Description:** Use: Revive all bodies, fully heal all units, and clear all status effects.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `trinkets.gon`  
 
 ```
@@ -23250,7 +23250,7 @@ SixPack {
 ### `IceCubes`
 **Name:** Ice Cubes  
 **Description:** Use: A lobbed attack that Freezes units.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24028,7 +24028,7 @@ OddRemote {
 ### `ButterflyKnife`
 **Name:** Butterfly Knife  
 **Description:** Use: A multi-hit melee attack that inflicts Bleed.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24090,7 +24090,7 @@ RustyRazor {
 ### `Bricks`
 **Name:** Bricks  
 **Description:** Use: A lobbed attack that inflicts Stun.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24111,7 +24111,7 @@ Bricks {
 ### `Mjolnir`
 **Name:** Mjolnir  
 **Description:** Use: A ranged attack that passes through units and returns to you after you throw it. At its apex, it deals electric damage.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24226,7 +24226,7 @@ Pinwheel {
 ### `CrispPaper`
 **Name:** Crisp Paper  
 **Description:** Use: A ranged attack that inflicts Bleed 3.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24247,7 +24247,7 @@ CrispPaper {
 ### `PurpleMushroom`
 **Name:** Purple Mushroom  
 **Description:** Use: A ranged attack that inflicts Confusion 2.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24269,7 +24269,7 @@ PurpleMushroom {
 ### `BlackMushroom`
 **Name:** Black Mushroom  
 **Description:** Use: A ranged attack that inflicts Weakness 2.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24290,7 +24290,7 @@ BlackMushroom {
 ### `RedMushroom`
 **Name:** Red Mushroom  
 **Description:** Use: A ranged attack that inflicts Charm 3.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24311,7 +24311,7 @@ RedMushroom {
 ### `PoisonVial`
 **Name:** Les Toxin  
 **Description:** Use: A ranged attack that inflicts Poison 2.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24352,7 +24352,7 @@ PopCap {
 ### `CreepyPhoto`
 **Name:** Creepy Photo  
 **Description:** Use: A melee attack that inflicts Fear 1.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24372,7 +24372,7 @@ CreepyPhoto {
 ### `FingerBone`
 **Name:** Finger Bone  
 **Description:** Use: A straight ranged attack that inflicts Immobile 3.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24452,7 +24452,7 @@ Trowel {
 ### `StaffOfFlame`
 **Name:** Staff of Flame  
 **Description:** Use: A fire attack that inflicts Burn 5.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24519,7 +24519,7 @@ BattleAxe {
 ### `AnointingOil`
 **Name:** Anointing Oil  
 **Description:** Use: Cleanse debuffs from an adjacent unit or yourself.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24540,7 +24540,7 @@ AnointingOil {
 ### `Girder`
 **Name:** Girder  
 **Description:** Use: A melee attack with Knockback 10 and Chain Knockback.
-[s:.7](Usable once per battle.)[/s]
+\[s:.7\](Usable once per battle.)\[/s\]
 Passive: +1 Brace while this weapon is usable.  
 **Source:** `weapons.gon`  
 
@@ -24567,7 +24567,7 @@ Girder {
 ### `InfinityArrow`
 **Name:** Arrow of Infinity  
 **Description:** Use: Your next basic attack has +5 range, +100% Crit Chance, ignores shield and can't miss.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24816,7 +24816,7 @@ GrapplingHook {
 ### `Chainsaw`
 **Name:** Chainsaw  
 **Description:** Use: A multi-hit melee attack with a 25% chance to Cleave.
-[s:.7](Usable once per battle.)[/s]
+\[s:.7\](Usable once per battle.)\[/s\]
 Passive: +2 Thorns.  
 **Source:** `weapons.gon`  
 
@@ -24870,7 +24870,7 @@ BurningCoal {
 ### `RainbowRemote`
 **Name:** Rainbow Remote  
 **Description:** Use: Cast a targeted random spell.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -24932,7 +24932,7 @@ RustedRod {
 **Name:** Meat Cleaver  
 **Description:** Use: A melee attack with Cleave that deals damage equal to half the target's current HP.
 Bosses take 1/6th of their current HP in damage instead.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -25096,7 +25096,7 @@ RocketLauncher {
 ### `FreyedWires`
 **Name:** Frayed Wires  
 **Description:** Use: An electric melee attack that can chain through adjacent units.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -25116,7 +25116,7 @@ FreyedWires {
 ### `OldExtinguisher`
 **Name:** Old Extinguisher  
 **Description:** Use: Extinguishes fires in a cone with Knockback 5.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -25389,7 +25389,7 @@ CatPaw {
 ### `FlowerMix`
 **Name:** Flower Mix  
 **Description:** Use: Plant flowers in a large area. 
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -25410,7 +25410,7 @@ FlowerMix {
 ### `PuzzleBox`
 **Name:** Puzzle Box  
 **Description:** Use: Shoot hooks in 8 directions that inflict Bleed 1 and pull units towards you.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -25458,7 +25458,7 @@ Crowbar {
 ### `FireFlower`
 **Name:** Fire Flower  
 **Description:** Use: Shoot a fireball that inflicts Burn 2 in an area.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -25523,7 +25523,7 @@ CarBattery {
 ### `ModelingClay`
 **Name:** Modeling Clay  
 **Description:** {str_aux_item_desc}
-[s:.7](This changes into a different weapon each time it's used.)[/s]  
+\[s:.7\](This changes into a different weapon each time it's used.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -25603,7 +25603,7 @@ PharaohStaff { //Unique item from looting the Mysterious Tomb.
 ### `SlagMight`
 **Name:** Slag Might  
 **Description:** Use: A melee attack with Bruise 1 and Knockback 5.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -25662,7 +25662,7 @@ AlienBlaster { //Unique from CrashedObject event
 ### `PolymorphRemote`
 **Name:** Polymorph Remote  
 **Description:** Use: Transform a non-boss enemy into another random enemy from the same chapter.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -25702,7 +25702,7 @@ MelonBaller {
 ### `EtherSoakedRag`
 **Name:** Ether Soaked Rag  
 **Description:** Use: Put an adjacent unit or yourself to sleep. That unit gets +5 Health Regen and +5 Mana Regen until it wakes up.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -25742,7 +25742,7 @@ DeathsScythe {
 ### `Necronomicon`
 **Name:** Necronomicon  
 **Description:** Use: Unearth 5 zombies. These zombies have a 33% chance of having Madness.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26057,7 +26057,7 @@ IrradiatedObject {
 ### `IrradiatedObject_Burn`
 **Description:** Use: A melee attack that inflicts Burn 1.
 {str_aux_item_desc}
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26073,7 +26073,7 @@ IrradiatedObject_Burn {
 ### `IrradiatedObject_Stun`
 **Description:** Use: A melee attack that inflicts Stun 1.
 {str_aux_item_desc}
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26089,7 +26089,7 @@ IrradiatedObject_Stun {
 ### `IrradiatedObject_Bleed`
 **Description:** Use: A melee attack that inflicts Bleed 1.
 {str_aux_item_desc}
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26105,7 +26105,7 @@ IrradiatedObject_Bleed {
 ### `IrradiatedObject_Bruise`
 **Description:** Use: A melee attack that inflicts Bruise 1.
 {str_aux_item_desc}
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26121,7 +26121,7 @@ IrradiatedObject_Bruise {
 ### `IrradiatedObject_Poison`
 **Description:** Use: A melee attack that inflicts Poison 1.
 {str_aux_item_desc}
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26137,7 +26137,7 @@ IrradiatedObject_Poison {
 ### `IrradiatedObject_Sleep`
 **Description:** Use: A melee attack that inflicts Sleep 1.
 {str_aux_item_desc}
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26153,7 +26153,7 @@ IrradiatedObject_Sleep {
 ### `IrradiatedObject_Fear`
 **Description:** Use: A melee attack that inflicts Fear 1.
 {str_aux_item_desc}
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26169,7 +26169,7 @@ IrradiatedObject_Fear {
 ### `IrradiatedObject_Charmed`
 **Description:** Use: A melee attack that inflicts Charmed 1.
 {str_aux_item_desc}
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26185,7 +26185,7 @@ IrradiatedObject_Charmed {
 ### `IrradiatedObject_Weakness`
 **Description:** Use: A melee attack that inflicts Weakness 1.
 {str_aux_item_desc}
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26201,7 +26201,7 @@ IrradiatedObject_Weakness {
 ### `IrradiatedObject_Confusion`
 **Description:** Use: A melee attack that inflicts Confusion 1.
 {str_aux_item_desc}
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26217,7 +26217,7 @@ IrradiatedObject_Confusion {
 ### `SteelBall`
 **Name:** Steel Ball  
 **Description:** Use: Summon an invulnerable Fly familiar.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26237,7 +26237,7 @@ SteelBall {
 ### `USAShield`
 **Name:** USA Shield  
 **Description:** Use: A ranged attack that inflicts Stun.
-[s:.7](Usable once per battle.)[/s]
+\[s:.7\](Usable once per battle.)\[/s\]
 Passive: +2 Brace while this weapon is usable.  
 **Source:** `weapons.gon`  
 
@@ -26349,7 +26349,7 @@ BucketOfBlood {
 ### `BloodyButterflyKnife`
 **Name:** Bloody Knife  
 **Description:** Use: A multi-hit melee attack with Lifesteal that inflicts Bleed.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26696,7 +26696,7 @@ JohnnysStool {
 ### `AlienTech`
 **Name:** Alien Tech  
 **Description:** Use: Target an area. Unleash a hyper beam attack in that area at the start of your next turn.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26717,7 +26717,7 @@ AlienTech {
 ### `Stacy100`
 **Name:** Stacy 100  
 **Description:** Use: Spawn a Stacy.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26822,7 +26822,7 @@ Fate {
 ### `MammothTusk`
 **Name:** Mammoth Tusk  
 **Description:** Use: A melee attack that inflicts Bruise 2 and Confusion. Become Drowsy after use.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -26844,7 +26844,7 @@ MammothTusk {
 ### `AmericanFlag`
 **Name:** American Flag  
 **Description:** Use: Force a unit to attack one of its enemies.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```
@@ -27036,7 +27036,7 @@ ManholeCover {
 ### `TinasLarynx`
 **Name:** Tina's Larynx  
 **Description:** Use: Inflict Fear on all enemies.
-[s:.7](Usable once per battle.)[/s]  
+\[s:.7\](Usable once per battle.)\[/s\]  
 **Source:** `weapons.gon`  
 
 ```

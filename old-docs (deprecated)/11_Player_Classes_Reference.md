@@ -2098,7 +2098,7 @@ This file lists all Actives (Attacks/Abilities) and Passives available to each p
 | **OVERPOWERED!!!** | `Overpowered` | Excess damage you deal to units makes them explode, dealing the excess damage to units around it, except for you. |
 | **Punch Face** | `PunchFace` | Your basic attacks are critical if they hit the front of a unit. |
 | **Rat Style** | `RatStyle` | +10% dodge chance. |
-| **Merciless** | `Recoil` | When you deal 10 or more damage in a single hit, gain +2 [img:shield] and refresh your movement action. [s:.7](This doesn't trigger during your movement action.)[/s] |
+| **Merciless** | `Recoil` | When you deal 10 or more damage in a single hit, gain +2 [img:shield] and refresh your movement action. \[s:.7\](This doesn't trigger during your movement action.)\[/s\] |
 | **Patellar Reflex** | `ReflexPunch` | When a unit damages you, counter-attack dealing 1 damage and inflicting Bruise. |
 | **Scars** | `Scars` | +1 Brace. |
 | **Shoulder Check** | `ShoulderCheck` | If you're facing a unit after you move, automatically attack it at 33% damage. |

@@ -22,7 +22,7 @@
   </tr>
   <tr>
     <td><strong>Statuses and Injuries</strong></td>
-    <td><a href="../Statuses_and_Injuries/Disorders.md">Disorders</a> • <a href="../Statuses_and_Injuries/Injuries.md">Injuries</a> • <a href="../Statuses_and_Injuries/Status_Effect_Keywords.md">Status Effect Keywords</a> • <a href="../Statuses_and_Injuries/Statuses.md">Statuses</a></td>
+    <td><a href="../Statuses_and_Injuries/Injuries.md">Injuries</a> • <a href="../Statuses_and_Injuries/Status_Effect_Keywords.md">Status Effect Keywords</a></td>
   </tr>
   <tr>
     <td><strong>System and Engine</strong></td>
@@ -518,9 +518,9 @@ Units pulled by your hook gain trample while being hooked.
 **Source:** `butcher_passives.gon`  
 
 **Localization Strings:**
-- `PASSIVE_HEAVEHOOK_MULTICLASS_DESC`: "Your hook can target tiles. <br/> Units pulled by your hook gain trample while being hooked. <br/> [s:.7](Equips a temporary hook if you dont have one)[/s]"
+- `PASSIVE_HEAVEHOOK_MULTICLASS_DESC`: "Your hook can target tiles. <br/> Units pulled by your hook gain trample while being hooked. <br/> \[s:.7\](Equips a temporary hook if you dont have one)\[/s\]"
 - `PASSIVE_HEAVEHOOK2_DESC`: "Your hook can target tiles. <br/> Units pulled by your hook gain trample while being hooked, this trample damage is doubled."
-- `PASSIVE_HEAVEHOOK2_MULTICLASS_DESC`: "Your hook can target tiles. <br/> Units pulled by your hook gain trample while being hooked, this trample damage is doubled. <br/> [s:.7](Equips a temporary hook if you dont have one)[/s]"
+- `PASSIVE_HEAVEHOOK2_MULTICLASS_DESC`: "Your hook can target tiles. <br/> Units pulled by your hook gain trample while being hooked, this trample damage is doubled. <br/> \[s:.7\](Equips a temporary hook if you dont have one)\[/s\]"
 
 ```
 HeaveHook {
@@ -6382,12 +6382,12 @@ EternalYouth { //Given by the fountain event
 ### `DejaVu`
 **Name:** Deja Vu  
 **Description:** 10% chance to cancel actions.
-[s:.7]Deja Vu will go away when this cat returns to the house.[/s]  
+[s:.7]Deja Vu will go away when this cat returns to the house.\[/s\]  
 **Source:** `disorders.gon`  
 
 **Localization Strings:**
 - `DISORDER_SEVEREDEJAVU_NAME`: "Severe Deja Vu"
-- `DISORDER_SEVEREDEJAVU_DESC`: "Steven has control of you now. <br/> [s:.7]Deja Vu will go away when this cat returns to the house.[/s]"
+- `DISORDER_SEVEREDEJAVU_DESC`: "Steven has control of you now. <br/> [s:.7]Deja Vu will go away when this cat returns to the house.\[/s\]"
 
 ```
 DejaVu {
@@ -7796,7 +7796,7 @@ Maestro {
 **Source:** `druid_passives.gon`  
 
 **Localization Strings:**
-- `PASSIVE_MEGAMINIONS2_DESC`: "The 1st and every 3rd familiar you spawn are upgraded into a Champion. <br/> [s:.7](The first familiar you spawn is likely your Crow.)[/s]"
+- `PASSIVE_MEGAMINIONS2_DESC`: "The 1st and every 3rd familiar you spawn are upgraded into a Champion. <br/> \[s:.7\](The first familiar you spawn is likely your Crow.)\[/s\]"
 
 ```
 MegaMinions {
@@ -8741,11 +8741,11 @@ PunchFace {
 ### `Recoil`
 **Name:** Merciless  
 **Description:** When you deal 10 or more damage in a single hit, gain +2 [img:shield] and refresh your movement action.
-[s:.7](This doesn't trigger during your movement action.)[/s]  
+\[s:.7\](This doesn't trigger during your movement action.)\[/s\]  
 **Source:** `fighter_passives.gon`  
 
 **Localization Strings:**
-- `PASSIVE_MERCILESS2_DESC`: "When you deal 10 or more damage in a single hit, gain +2 [img:shield], All Stats Up, and refresh your movement action. <br/> [s:.7](This doesn't trigger during your movement action.)[/s]"
+- `PASSIVE_MERCILESS2_DESC`: "When you deal 10 or more damage in a single hit, gain +2 [img:shield], All Stats Up, and refresh your movement action. <br/> \[s:.7\](This doesn't trigger during your movement action.)\[/s\]"
 
 ```
 Recoil {

@@ -22,7 +22,7 @@
   </tr>
   <tr>
     <td><strong>Statuses and Injuries</strong></td>
-    <td><a href="../Statuses_and_Injuries/Disorders.md">Disorders</a> • <a href="../Statuses_and_Injuries/Injuries.md">Injuries</a> • <a href="../Statuses_and_Injuries/Status_Effect_Keywords.md">Status Effect Keywords</a> • <a href="../Statuses_and_Injuries/Statuses.md">Statuses</a></td>
+    <td><a href="../Statuses_and_Injuries/Injuries.md">Injuries</a> • <a href="../Statuses_and_Injuries/Status_Effect_Keywords.md">Status Effect Keywords</a></td>
   </tr>
   <tr>
     <td><strong>System and Engine</strong></td>
@@ -929,7 +929,7 @@ BodySlam2 {
 ### `BloodMagic`
 **Name:** Blood Magic  
 **Description:** Take 5 damage and gain 5 mana.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -968,7 +968,7 @@ BloodMagic {
 
 ### `BloodMagic2`
 **Description:** Take 5 damage and gain 10 mana.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -1025,7 +1025,7 @@ SmellBlood {
 
 ### `SmellBlood2`
 **Description:** Until your next turn, if a unit in your attack range takes physical damage from a source that isn't you, you attack that unit.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -1047,7 +1047,7 @@ SmellBlood2 {
 ### `Vurp`
 **Name:** Vurp  
 **Description:** Vomit up the last consumable you ate this battle and equip it.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -1085,7 +1085,7 @@ Vurp {
 
 ### `Vurp2`
 **Description:** Vomit up the last consumable you ate this battle and equip it.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -1333,7 +1333,7 @@ Tromp2 {
 ### `LightenTheLoad`
 **Name:** Lighten the Load  
 **Description:** Take 25 damage. You take an extra turn after this one.
-[s:.7](This spell can't be cast on extra turns.)[/s]  
+\[s:.7\](This spell can't be cast on extra turns.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -1374,7 +1374,7 @@ LightenTheLoad {
 
 ### `LightenTheLoad2`
 **Description:** Take 15 damage. You take an extra turn after this one.
-[s:.7](This spell can't be cast on extra turns.)[/s]  
+\[s:.7\](This spell can't be cast on extra turns.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -1464,7 +1464,7 @@ Crushinator2 {
 ### `CannonBall`
 **Name:** Cannon Ball!  
 **Description:** Target any tile. At the beginning of your next turn, jump to that tile. If you land on a unit, stun it.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -1515,8 +1515,8 @@ CannonBall {
 
 ### `CannonBall2`
 **Description:** Target any tile. At the beginning of your next turn, jump to that tile. If you land on a unit, damage and stun it.
-[s:.7](This spell costs less.)[/s]
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -1584,7 +1584,7 @@ Monch {
 
 ### `Monch2`
 **Description:** A melee attack with lifesteal. This spell does more damage the less health you have.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -1665,7 +1665,7 @@ DeathWind {
 
 ### `DeathWind2`
 **Description:** Blow wind that inflicts Poison 4 in a cone. The cone is larger the less health you have.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -1738,7 +1738,7 @@ Spoil {
 
 ### `Spoil2`
 **Description:** Turn all food pickups into Rot Flies.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -2185,7 +2185,7 @@ MyTurn {
 
 ### `MyTurn2`
 **Description:** Steal an allied cat's next turn for yourself.
-[s:.7](This spell costs 1 mana.)[/s]  
+\[s:.7\](This spell costs 1 mana.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -3302,7 +3302,7 @@ Grapnel {
 
 ### `Grapnel2`
 **Description:** Lob a hook at an object and pull yourself to it. Trample over tiles in your path.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -3449,7 +3449,7 @@ Contaminate2 {
 ### `LodgeHook`
 **Name:** Lodge Hook  
 **Description:** Inflict Bleed 10 on an adjacent unit. You can't use your weapon for the rest of the battle.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -3492,7 +3492,7 @@ LodgeHook {
 
 ### `LodgeHook2`
 **Description:** Inflict Bleed 10, Immobilize 2, and Bruise 2 on an adjacent unit. You can't use your weapon for the rest of the battle.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `butcher_abilities.gon`  
 
 ```
@@ -4169,7 +4169,7 @@ Reach2 {
 ### `ManaDrain`
 **Name:** Borrow Mana  
 **Description:** Steal up to 5 mana from an ally.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -4211,7 +4211,7 @@ ManaDrain {
 
 ### `ManaDrain2`
 **Description:** Steal all of an ally's mana.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -4653,7 +4653,7 @@ GainThorns {
 
 ### `GainThorns2`
 **Description:** Gain +1 Thorns.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -4904,7 +4904,7 @@ BoostSpellRange {
 
 ### `BoostSpellRange2`
 **Description:** Gain +1 Magic Damage until end of turn.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -5254,7 +5254,7 @@ Flex {
 
 ### `Flex2`
 **Description:** Gain +1 temporary Brace until your next turn and deal 3 knockback to each adjacent unit.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -5361,7 +5361,7 @@ Dart {
 
 ### `Dart2`
 **Description:** Throw a stronger nail that ignores shield.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -6284,7 +6284,7 @@ FeatherFeet2 {
 ### `Reduce`
 **Name:** Reduce  
 **Description:** Gain +20% dodge chance, +4 [img:spd], and -2 Damage.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -6321,7 +6321,7 @@ Reduce {
 
 ### `Reduce2`
 **Description:** Gain +20% dodge chance, +4 [img:spd], and -2 Damage.
-[s:.7](This spell costs 0 mana. Castable once per battle.)[/s]  
+\[s:.7\](This spell costs 0 mana. Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -6407,7 +6407,7 @@ Nerf2 {
 ### `Trip`
 **Name:** Trip  
 **Description:** Immobilize an adjacent unit.
-[s:.7]This only has a 25% chance to work on boss units and large enemies.[/s]  
+[s:.7]This only has a 25% chance to work on boss units and large enemies.\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -6451,7 +6451,7 @@ Trip {
 ### `Trip2`
 **Name:** Trip  
 **Description:** Immobilize a unit in range 4.
-[s:.7]This only has a 25% chance to work on boss units and large enemies.[/s]  
+[s:.7]This only has a 25% chance to work on boss units and large enemies.\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -6727,7 +6727,7 @@ StackTheDeck2 {
 ### `Infiltrate`
 **Name:** Tunnel  
 **Description:** Dig to any open tile.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -6762,7 +6762,7 @@ Infiltrate {
 
 ### `Infiltrate2`
 **Description:** Dig to any open tile.
-[s:.7](Castable once per battle. This spell costs 0 mana.)[/s]  
+\[s:.7\](Castable once per battle. This spell costs 0 mana.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -6784,7 +6784,7 @@ Infiltrate2 {
 ### `Burst`
 **Name:** Burst  
 **Description:** Fire a magical blast.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -6827,7 +6827,7 @@ Burst {
 
 ### `Burst2`
 **Description:** Fire a magical blast.
-[s:.7](This spell costs 0 mana. Castable once per battle.)[/s]  
+\[s:.7\](This spell costs 0 mana. Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -6849,7 +6849,7 @@ Burst2 {
 ### `Suppress`
 **Name:** Stun  
 **Description:** Chuck a rock at a unit, inflicting Stun on that unit.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -6893,7 +6893,7 @@ Suppress {
 
 ### `Suppress2`
 **Description:** Chuck a rock at a unit, inflicting Stun on that unit.
-[s:.7](This spell costs 0 mana. Castable once per battle.)[/s]  
+\[s:.7\](This spell costs 0 mana. Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -6915,7 +6915,7 @@ Suppress2 {
 ### `Endeavor`
 **Name:** Second Wind  
 **Description:** Refresh your basic attack, movement, weapon, and trinket action.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -6954,7 +6954,7 @@ Endeavor {
 
 ### `Endeavor2`
 **Description:** Refresh your basic attack, movement, weapon, and trinket action.
-[s:.7](This spell costs 0 mana. Castable once per battle.)[/s]  
+\[s:.7\](This spell costs 0 mana. Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7036,7 +7036,7 @@ LotteryShottery {
 
 ### `LotteryShottery2`
 **Description:** Deal 2 damage to a random unit. If you kill that unit, take an extra turn.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7221,7 +7221,7 @@ FindARock {
 
 ### `FindARock2`
 **Description:** Dig up a small rock.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7312,7 +7312,7 @@ Gassy_AssBlast2 {
 ### `BurgeoningBlast`
 **Name:** Burgeoning Blast  
 **Description:** A spell that deals {v0} damage. Increase this spell's damage by 2 at the end of each turn.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7353,7 +7353,7 @@ BurgeoningBlast {
 
 ### `BurgeoningBlast2`
 **Description:** A spell that deals {v0} damage. Increase this spell's damage by 3 at the end of each turn.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7376,7 +7376,7 @@ BurgeoningBlast2 {
 ### `BurgeoningBarrier`
 **Name:** Burgeoning Barrier  
 **Description:** Gain {v0} [img:shield]. Increase this spell's [img:shield] by 2 at the end of each turn.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7412,7 +7412,7 @@ BurgeoningBarrier {
 
 ### `BurgeoningBarrier2`
 **Description:** Gain {v0} [img:shield]. Increase this spell's [img:shield] by 3 at the end of each turn.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7437,7 +7437,7 @@ BurgeoningBarrier2 {
 ### `BurgeoningBattery`
 **Name:** Burgeoning Battery  
 **Description:** Gain {v0} mana. Increase this spell's mana gain by 2 at the end of each turn.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7473,7 +7473,7 @@ BurgeoningBattery {
 
 ### `BurgeoningBattery2`
 **Description:** Gain {v0} mana. Increase this spell's mana gain by 3 at the end of each turn.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7498,7 +7498,7 @@ BurgeoningBattery2 {
 ### `HoseOff`
 **Name:** Hose Off  
 **Description:** Spray a unit with water, cleansing its debuffs and making a puddle.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7546,7 +7546,7 @@ HoseOff {
 
 ### `HoseOff2`
 **Description:** Spray a unit with water, cleansing its debuffs and making a puddle.
-[s:.7](This spell costs 0 mana. Castable once per battle.)[/s]  
+\[s:.7\](This spell costs 0 mana. Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7568,7 +7568,7 @@ HoseOff2 {
 ### `Taint`
 **Name:** Proliferate  
 **Description:** Double a unit's Poison, Bleed, and Burn.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7611,7 +7611,7 @@ Taint {
 
 ### `Taint2`
 **Description:** Double a unit's Poison, Bleed, and Burn.
-[s:.7](This spell costs 0 mana. Castable once per battle.)[/s]  
+\[s:.7\](This spell costs 0 mana. Castable once per battle.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7816,7 +7816,7 @@ Desecrate2 {
 ### `Contort`
 **Name:** Invert  
 **Description:** Swap your highest and lowest stats.
-[s:.7](Ties are chosen at random)[/s]  
+\[s:.7\](Ties are chosen at random)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7846,7 +7846,7 @@ Contort {
 
 ### `Contort2`
 **Description:** Swap a unit's highest and lowest stats.
-[s:.7](Ties are chosen at random)[/s]  
+\[s:.7\](Ties are chosen at random)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7942,7 +7942,7 @@ RussianRoulette2 {
 ### `Step`
 **Name:** Step  
 **Description:** Move one tile.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -7971,7 +7971,7 @@ Step {
 
 ### `Step2`
 **Description:** Move two tiles.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -8031,7 +8031,7 @@ Interchange {
 
 ### `Interchange2`
 **Description:** Exchange your movement action for an additional basic attack, and vice versa.
-[s:.7](This spell costs 0 mana the first time you cast it each turn.)[/s]  
+\[s:.7\](This spell costs 0 mana the first time you cast it each turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -8125,7 +8125,7 @@ LookAtMe2 {
 ### `Rouse`
 **Name:** Rouse  
 **Description:** Give an adjacent unit +2 Charge.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -8160,7 +8160,7 @@ Rouse {
 
 ### `Rouse2`
 **Description:** Give any unit +2 Charge.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -8182,7 +8182,7 @@ Rouse2 {
 ### `Shift`
 **Name:** Shift  
 **Description:** Swap positions with an adjacent unit.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -8217,7 +8217,7 @@ Shift {
 
 ### `Shift2`
 **Description:** Swap positions with any unit.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -8239,7 +8239,7 @@ Shift2 {
 ### `Donate`
 **Name:** Make a Wish  
 **Description:** Spend a coin to spawn a random pickup on a random tile.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -8287,7 +8287,7 @@ Donate {
 
 ### `Donate2`
 **Description:** Spend a coin to spawn a random pickup on an empty tile of your choice.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -8313,7 +8313,7 @@ Donate2 {
 ### `Magnet`
 **Name:** Magnet  
 **Description:** Pull a pickup one tile toward you.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -8356,7 +8356,7 @@ Magnet {
 
 ### `Magnet2`
 **Description:** Pull a pickup all the way toward you.
-[s:.7](Castable once per turn)[/s]  
+\[s:.7\](Castable once per turn)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -8416,7 +8416,7 @@ ScuffItOff {
 
 ### `ScuffItOff2`
 **Description:** Heal yourself HP equal to half your [img:str], rounded up.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -8474,7 +8474,7 @@ BarfBall {
 
 ### `BarfBall2`
 **Description:** A ranged attack that deals damage equal to half your [img:con], rounded up.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -8527,7 +8527,7 @@ DexterousHit {
 
 ### `DexterousHit2`
 **Description:** A melee attack that deals damage equal to half your [img:dex], rounded up.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -9722,7 +9722,7 @@ Swat {
 
 ### `Swat2`
 **Description:** Knockback a unit 10 tiles.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -10014,7 +10014,7 @@ Knead2 {
 ### `BuyCatnip`
 **Name:** Buy Catnip  
 **Description:** Spend 5 coins, gain 10 mana.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -10050,7 +10050,7 @@ BuyCatnip {
 
 ### `BuyCatnip2`
 **Description:** Spend 5 coins, gain 15 mana.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -10074,7 +10074,7 @@ BuyCatnip2 {
 ### `VetVisit`
 **Name:** Vet Visit  
 **Description:** Spend 5 coins, heal 10 HP.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -10106,7 +10106,7 @@ VetVisit {
 
 ### `VetVisit2`
 **Description:** Spend 5 coins, heal 15 HP.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -10128,7 +10128,7 @@ VetVisit2 {
 ### `HireHitman`
 **Name:** Hire Hitman  
 **Description:** Spend 7 coins, summon a bounty hunter.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -10166,7 +10166,7 @@ HireHitman {
 
 ### `HireHitman2`
 **Description:** Spend 7 coins, summon a bounty hunter with All Stats Up 2.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -10191,7 +10191,7 @@ HireHitman2 {
 ### `SubwayRide`
 **Name:** Subway Ride  
 **Description:** Spend 5 coins, teleport to any tile.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -10226,7 +10226,7 @@ SubwayRide {
 
 ### `SubwayRide2`
 **Description:** Spend 2 coins, teleport to any tile.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -10248,7 +10248,7 @@ SubwayRide2 {
 ### `GymMembership`
 **Name:** Gym Membership  
 **Description:** Spend 5 coins, gain All Stats Up.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -10283,7 +10283,7 @@ GymMembership {
 
 ### `GymMembership2`
 **Description:** Spend 5 coins, gain All Stats Up and refresh your basic attack and movement actions.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -10461,7 +10461,7 @@ CPR {
 
 ### `CPR2`
 **Description:** Revive an adjacent body to 5 HP.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -10862,7 +10862,7 @@ ColdShoulder {
 
 ### `ColdShoulder2`
 **Description:** Deal 1 ice damage and inflict Slow 1 at infinite range.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -10949,7 +10949,7 @@ BlowKiss2 {
 **Name:** Forbidden Fart  
 **Description:** Damage, Inflict Poison 4 and Knock Up nearby units.
 There will be permanent consequences for casting this spell…
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -11013,7 +11013,7 @@ ForbiddenFart {
 ### `ForbiddenFart2`
 **Description:** Damage, Inflict Poison 6 and Knock Up nearby units in a larger area.
 There will be permanent consequences for casting this spell…
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `colorless_abilities.gon`  
 
 ```
@@ -12453,7 +12453,7 @@ ThornyFeet {
 
 ### `ThornyFeet2`
 **Description:** Move 3 tiles. Plant brambles as you move.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -12519,7 +12519,7 @@ Encourage {
 
 ### `Encourage2`
 **Description:** Give a familiar an extra turn after this one.
-[s:.7](This spell costs less and has increased range.)[/s]  
+\[s:.7\](This spell costs less and has increased range.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -13230,7 +13230,7 @@ MonkeyThrow { //bonus ability for Monkey Form
 
 ### `MonkeyThrow2`
 **Description:** Throw an adjacent unit to another tile. It takes damage if it's thrown onto something.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -13380,7 +13380,7 @@ HardenSkin {
 
 ### `HardenSkin2`
 **Description:** Gain +1 [img:shield], +1 Thorns, and +1 temporary Brace.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -14819,7 +14819,7 @@ ControlAir {
 
 ### `ControlAir2`
 **Description:** Blow a unit ten tiles away from you. This doesn't deal Knockback damage.
-[s:.7](This spell costs less and has infinite range.)[/s]  
+\[s:.7\](This spell costs less and has infinite range.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -14924,7 +14924,7 @@ FamiliarSelfDestruct2 {
 ### `FeralMelee`
 **Name:** Feral Attack  
 **Description:** A melee attack.
-[s:.7](This spell costs 0 mana. Castable once per turn.)[/s]  
+\[s:.7\](This spell costs 0 mana. Castable once per turn.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -15063,7 +15063,7 @@ Lullaby {
 
 ### `Lullaby2`
 **Description:** Inflicts Sleep on units in an area.
-[s:.7](This spell costs less and has increased range.)[/s]  
+\[s:.7\](This spell costs less and has increased range.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -15089,7 +15089,7 @@ Lullaby2 {
 ### `WeAreTheChampions`
 **Name:** We Are the Champions  
 **Description:** Each familiar gains All Stats Up 2 and heals to full.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -15135,7 +15135,7 @@ WeAreTheChampions {
 
 ### `WeAreTheChampions2`
 **Description:** Each familiar gains All Stats Up 2 and heals to full.
-[s:.7](This spell costs 0 mana. Castable once per battle.)[/s]  
+\[s:.7\](This spell costs 0 mana. Castable once per battle.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -15205,7 +15205,7 @@ Cheerlead {
 ### `Cheerlead2`
 **Description:** Make a target unit The Alpha.
 PASSIVE: The first spell the Alpha casts each turn is cast twice.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -15274,7 +15274,7 @@ NaturesBlessing {
 
 ### `NaturesBlessing2`
 **Description:** Grow tall grass tiles in an area and give units in that area +3 Diminishing Health Regeneration
-[s:.7](This spell costs less and has infinite range.)[/s]  
+\[s:.7\](This spell costs less and has infinite range.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -15422,7 +15422,7 @@ SquirrelForm {
 ### `SquirrelForm2`
 **Description:** Spawn squirrels on each adjacent tile, then enter Squirrel Form.
 Your basic attack becomes Chitter and this becomes Birth Squirrel+.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -15450,7 +15450,7 @@ SquirrelForm2 {
 ### `BirthSquirrel`
 **Name:** Birth Squirrel  
 **Description:** Summon a squirrel.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -15715,7 +15715,7 @@ Serenade {
 
 ### `Serenade2`
 **Description:** Give Health Regeneration 1 to units in a larger area.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -16015,7 +16015,7 @@ Prance { //bonus ability for Elk Form
 
 ### `Prance2`
 **Description:** Refresh your movement action.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -16364,7 +16364,7 @@ FromTheTrees {
 
 ### `FromTheTrees2`
 **Description:** Summon a random animal that falls from the sky onto a random enemy, dealing more damage.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `druid_abilities.gon`  
 
 ```
@@ -17118,7 +17118,7 @@ Poke {
 
 ### `Poke2`
 **Description:** A melee attack that deals 1 damage.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -17255,8 +17255,8 @@ Push2 {
 ### `FalconPunch`
 **Name:** Falcon Punch  
 **Description:** Charge up a mega punch.
-[s:.7](This punch will be unleashed on your next turn.)[/s]
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](This punch will be unleashed on your next turn.)\[/s\]
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -17294,8 +17294,8 @@ FalconPunch {
 ### `FalconPunch2`
 **Name:** Falcon Punch  
 **Description:** Charge up a mega dash attack.
-[s:.7](This punch will be unleashed on your next turn.)[/s]
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](This punch will be unleashed on your next turn.)\[/s\]
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -17576,7 +17576,7 @@ Confront {
 ### `Confront2`
 **Description:** Move in front of an enemy.
 Your next action has +30% critical chance.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -17666,7 +17666,7 @@ Juiced2 {
 ### `CosmicPunch`
 **Name:** Cosmic Punch  
 **Description:** Punch a unit into SPACE!
-[s:.7]They will fall back down at the end of the round.[/s]  
+[s:.7]They will fall back down at the end of the round.\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -17721,7 +17721,7 @@ CosmicPunch {
 ### `CosmicPunch2`
 **Description:** Punch a unit into SPACE!
 [s:.7]They will fall back down at the end of the round.
-(This spell costs less.)[/s]  
+(This spell costs less.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -17887,7 +17887,7 @@ GravitySlam {
 
 ### `GravitySlam2`
 **Description:** Jump to a tile and pull enemies toward you when you land.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -18371,7 +18371,7 @@ Grapple {
 
 ### `Grapple2`
 **Description:** Immobilize an adjacent unit for as long as you remain adjacent.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -18564,7 +18564,7 @@ Reposition2 {
 ### `FighterBonusThrow`
 **Name:** Throw Weapon  
 **Description:** Throw your weapon at a unit. The weapon breaks.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -18655,7 +18655,7 @@ Bloodzerk {
 **Description:** Drop to 1 HP.
 Damage you deal to bleeding units has Lifesteal.
 This spell becomes Lacerate+.
-[s:.7](This spell costs 0 mana.)[/s]  
+\[s:.7\](This spell costs 0 mana.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -18740,7 +18740,7 @@ Lacerate2 {
 ### `ExhaustingBlow`
 **Name:** Exhausting Blow  
 **Description:** Dash forward one tile and attack with knockback.
-[s:.7](This spell's mana cost increases by 2 at the end of each of your turns.)[/s]  
+\[s:.7\](This spell's mana cost increases by 2 at the end of each of your turns.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -18786,7 +18786,7 @@ ExhaustingBlow {
 
 ### `ExhaustingBlow2`
 **Description:** Dash forward any number of tiles and attack with knockback.
-[s:.7](This spell's mana cost increases by 2 at the end of each of your turns.)[/s]  
+\[s:.7\](This spell's mana cost increases by 2 at the end of each of your turns.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -18808,7 +18808,7 @@ ExhaustingBlow2 {
 ### `ChaosRampage`
 **Name:** Chaos Rampage  
 **Description:** Take an extra turn. You have Madness 1 and Confusion 1 on that turn.
-[s:.7](This spell can't be cast on extra turns.)[/s]  
+\[s:.7\](This spell can't be cast on extra turns.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -18847,7 +18847,7 @@ ChaosRampage {
 ### `ChaosRampage2`
 **Name:** Chaos Rampage  
 **Description:** Take an extra turn. You have Madness 1 on that turn.
-[s:.7](This spell can't be cast on extra turns.)[/s]  
+\[s:.7\](This spell can't be cast on extra turns.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -18886,7 +18886,7 @@ ChaosRampage2 {
 **Name:** Meteor Slam  
 **Description:** Jump up to 2 tiles.
 Damage, knockback, and inflict Burn 3 on the unit you land on and all adjacent units.
-[s:.7](Adjacent units take half damage.)[/s]  
+\[s:.7\](Adjacent units take half damage.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -18988,7 +18988,7 @@ MeteorSlam2 {
 ### `MuscleMemory`
 **Name:** Muscle Memory  
 **Description:** A melee attack that deals 8 damage.
-[s:.7](This spell's damage is reduced by 1 and mana cost is reduced by 2 each time it's cast.)[/s]  
+\[s:.7\](This spell's damage is reduced by 1 and mana cost is reduced by 2 each time it's cast.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -19025,7 +19025,7 @@ MuscleMemory {
 
 ### `MuscleMemory2`
 **Description:** A melee attack that deals 8 damage and inflicts Bruise.
-[s:.7](This spell's damage is reduced by 1 and mana cost is reduced by 2 each time it's cast.)[/s]  
+\[s:.7\](This spell's damage is reduced by 1 and mana cost is reduced by 2 each time it's cast.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -19226,7 +19226,7 @@ TeamSpin {
 
 ### `TeamSpin2`
 **Description:** You and each allied cat do a spin attack at the same time.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -19408,7 +19408,7 @@ Huddle {
 
 ### `Huddle2`
 **Description:** You and each allied cat give adjacent units +1 Damage and +2 [img:spd].
-[s:.7](This spell is free the first time it's cast each battle.)[/s]  
+\[s:.7\](This spell is free the first time it's cast each battle.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -19506,7 +19506,7 @@ RagePunch {
 
 ### `RagePunch2`
 **Description:** A melee attack that increases its damage by 1 each time you take damage.
-[s:.7](This spell starts at 5 damage.)[/s]  
+\[s:.7\](This spell starts at 5 damage.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -19529,7 +19529,7 @@ RagePunch2 {
 **Name:** Breaking Point  
 **Description:** Deal damage, knockback, and knockback damage equal to your [img:str].
 Reduce this spell's mana cost by 1 each time you take damage.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -19575,7 +19575,7 @@ BreakingPoint {
 ### `BreakingPoint2`
 **Description:** Deal damage, knockback, and knockback damage equal to your [img:str].
 Reduce this spell's mana cost by 2 each time you take damage.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -19702,7 +19702,7 @@ DumbMove {
 
 ### `DumbMove2`
 **Description:** Move toward the closest enemy. The dumber you are, the farther you move.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -19832,7 +19832,7 @@ SuckerPunch2 {
 ### `Stick`
 **Name:** Stick!  
 **Description:** Equip a temporary Stick!
-[s:.7](Your weapon slot must be empty.)[/s]  
+\[s:.7\](Your weapon slot must be empty.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -19878,8 +19878,8 @@ Stick {
 
 ### `Stick2`
 **Description:** Equip a temporary Stick! Maybe even a big one?
-[s:.7](Your weapon slot must be empty.)[/s]
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](Your weapon slot must be empty.)\[/s\]
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -19949,7 +19949,7 @@ Hurl {
 
 ### `Hurl2`
 **Description:** Toss an adjacent unit at a random unit.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `fighter_abilities.gon`  
 
 ```
@@ -20784,7 +20784,7 @@ Harpoon { //CUT
 
 ### `Harpoon2`
 **Description:** Hook onto something in a straight line and drag yourself to it.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `hunter_abilities.gon`  
 
 ```
@@ -21944,7 +21944,7 @@ LastHit {
 
 ### `LastHit2`
 **Description:** Deal 1 damage to a unit. If this kills it, refresh your basic attack. This ignores shield and can't miss.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `hunter_abilities.gon`  
 
 ```
@@ -22011,7 +22011,7 @@ CupidsArrow {
 
 ### `CupidsArrow2`
 **Description:** A shot that damages and inflicts Charm 2.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `hunter_abilities.gon`  
 
 ```
@@ -22138,7 +22138,7 @@ HeavyShot {
 
 ### `HeavyShot2`
 **Description:** Shoot a high damage shot with a 50% chance to miss and a 50% chance to crit.
-[s:.7](This spell has increased range.)[/s]  
+\[s:.7\](This spell has increased range.)\[/s\]  
 **Source:** `hunter_abilities.gon`  
 
 ```
@@ -22165,7 +22165,7 @@ HeavyShot2 {
 ### `StakeOut`
 **Name:** Stake Out  
 **Description:** End your turn. On your next turn, your ranged abilities deal double damage.
-[s:.7](Castable only if you haven't taken any other actions this turn.)[/s]  
+\[s:.7\](Castable only if you haven't taken any other actions this turn.)\[/s\]  
 **Source:** `hunter_abilities.gon`  
 
 ```
@@ -22201,7 +22201,7 @@ StakeOut {
 
 ### `StakeOut2`
 **Description:** End your turn. On your next turn, your ranged abilities deal double damage.
-[s:.7](Costs 0 mana. Castable only if you haven't taken any other actions this turn other than your movement action.)[/s]  
+\[s:.7\](Costs 0 mana. Castable only if you haven't taken any other actions this turn other than your movement action.)\[/s\]  
 **Source:** `hunter_abilities.gon`  
 
 ```
@@ -22904,7 +22904,7 @@ SpawnTomTomFriend2 {//todo needs a buff
 ### `ScoutMe`
 **Name:** Scout Me  
 **Description:** Until next turn, allied cats gain a bonus ability that can let you shoot a tile of their choice.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `hunter_abilities.gon`  
 
 ```
@@ -22939,7 +22939,7 @@ ScoutMe {
 
 ### `ScoutMe2`
 **Description:** Until next turn, allied cats gain a bonus ability that can let you shoot a tile of their choice.
-[s:.7](Castable once per turn. This spell costs 0 mana.)[/s]  
+\[s:.7\](Castable once per turn. This spell costs 0 mana.)\[/s\]  
 **Source:** `hunter_abilities.gon`  
 
 ```
@@ -22961,7 +22961,7 @@ ScoutMe2 {
 ### `ShootHere`
 **Name:** Shoot Here!  
 **Description:** Instructs your friend to shoot an adjacent tile!
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `hunter_abilities.gon`  
 
 ```
@@ -23047,7 +23047,7 @@ CraftArrow {
 
 ### `CraftArrow2`
 **Description:** Collect all pickups within two tiles of you. Gain +1 Bonus Attack for each pickup instead of their normal effects.
-[s:.7](This spell costs 1 mana.)[/s]  
+\[s:.7\](This spell costs 1 mana.)\[/s\]  
 **Source:** `hunter_abilities.gon`  
 
 ```
@@ -23127,7 +23127,7 @@ CharmTrap {
 
 ### `CharmTrap2`
 **Description:** Spawn a trap that deals damage and inflicts Charm 1.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `hunter_abilities.gon`  
 
 ```
@@ -23573,7 +23573,7 @@ SlopThePigs {
 
 ### `SlopThePigs2`
 **Description:** Each familiar in an area gains All Stats Up and heals 4 HP. Other units in the area gain +1 [img:con] and heal 2 HP.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `hunter_abilities.gon`  
 
 ```
@@ -24677,7 +24677,7 @@ WallOfFire2 {
 ### `HyperBeam`
 **Name:** Hyper Beam  
 **Description:** Target a tile. At the start of your next turn, unleash an extremely high damage mega beam on that tile.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -25134,7 +25134,7 @@ Warp {
 
 ### `Warp2`
 **Description:** Teleport diagonally any distance.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -25188,7 +25188,7 @@ MageTeleport {
 
 ### `MageTeleport2`
 **Description:** Teleport to any tile.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -25242,7 +25242,7 @@ MageSwap {
 
 ### `MageSwap2`
 **Description:** Switch positions with any unit.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -25768,7 +25768,7 @@ CryoHeal {
 
 ### `CryoHeal2`
 **Description:** Heal and inflict Freeze 1 on any unit.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -26099,7 +26099,7 @@ Thunderburst2 {
 ### `DealWithTheDevil`
 **Name:** Deal with the Devil  
 **Description:** Injure yourself, then restore 15 mana.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -26141,7 +26141,7 @@ DealWithTheDevil {
 ### `DealWithTheDevil2`
 **Name:** Deal with the Devil  
 **Description:** Injure yourself, then restore all your mana.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -26183,7 +26183,7 @@ DealWithTheDevil2 {
 ### `ForbiddenFlame`
 **Name:** Forbidden Flame  
 **Description:** Damage and inflict Burn 7 on all enemies and light the map on fire. There will be permanent consequences for casting this spell…
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -26249,7 +26249,7 @@ ForbiddenFlame {
 
 ### `ForbiddenFlame2`
 **Description:** Heavily damage and inflict Burn 10 on all enemies and light the map on fire. There will be permanent consequences for casting this spell…
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -26275,7 +26275,7 @@ ForbiddenFlame2 {
 ### `ForbiddenFlood`
 **Name:** Forbidden Flood  
 **Description:** Knock back and damage all enemies, then flood the entire map. There will be permanent consequences for casting this spell…
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -26346,7 +26346,7 @@ ForbiddenFlood {
 
 ### `ForbiddenFlood2`
 **Description:** Knock back and damage all enemies, heal all allies, then flood the entire map. There will be permanent consequences for casting this spell…
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -26623,7 +26623,7 @@ Shatter2 {
 ### `ForbiddenFulmination`
 **Name:** Forbidden Fulmination  
 **Description:** Strike all enemies with lightning, inflicting Stun. There will be permanent consequences for casting this spell…
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -26684,7 +26684,7 @@ ForbiddenFulmination {
 
 ### `ForbiddenFulmination2`
 **Description:** Strike all enemies with lightning, inflicting Stun 2. There will be permanent consequences for casting this spell…
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -27113,7 +27113,7 @@ Smolder {
 
 ### `Smolder2`
 **Description:** Inflict Burn 1 and +1 [img:spd] to any unit.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -27227,7 +27227,7 @@ FireSurge2 {
 ### `IceSurge`
 **Name:** Ice Surge  
 **Description:** An ice spell that increases its range and Slow every turn. At 2 turns, it gains Immobilize 1. At 3 turns, it gains Freeze 1.
-[s:.7](Current turns: {v0})[/s]  
+\[s:.7\](Current turns: {v0})\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -27287,7 +27287,7 @@ IceSurge {
 
 ### `IceSurge2`
 **Description:** An ice spell that increases its range, damage, and Slow every turn. At 2 turns, it gains Immobilize 1. At 3 turns, it gains Freeze 1.
-[s:.7](Current turns: {v0})[/s]  
+\[s:.7\](Current turns: {v0})\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -27462,7 +27462,7 @@ Creshendo2 {
 ### `Divide`
 **Name:** Divide  
 **Description:** Lose Damage equal to half of your basic attack's damage, rounded up. For the rest of the battle, you can attack an extra time each turn.
-[s:.7](This can't be cast if your basic attack's damage is 1 or less.)[/s]  
+\[s:.7\](This can't be cast if your basic attack's damage is 1 or less.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -27504,7 +27504,7 @@ Divide {
 
 ### `Divide2`
 **Description:** Lose Damage equal to 1/3rd of your basic attack's damage, rounded up. For the rest of the battle, you can attack an extra time each turn.
-[s:.7](This can't be cast if your basic attack's damage is 1 or less.)[/s]  
+\[s:.7\](This can't be cast if your basic attack's damage is 1 or less.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -27530,7 +27530,7 @@ Divide2 {
 **Description:** Apply Freeze 2 to each unit except for yourself and 1 other chosen unit.
 Deal 10 Damage to enemies and heal each ally 10 HP.
 There will be permanent consequences for casting this spell…
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -27603,7 +27603,7 @@ ForbiddenFrost {
 **Description:** Apply Freeze 2 to each unit except for yourself and 1 other chosen unit.
 Deal 15 Damage to enemies and fully heal each ally.
 There will be permanent consequences for casting this spell…
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -27632,7 +27632,7 @@ ForbiddenFrost2 {
 ### `BlackMagic`
 **Name:** Black Magic  
 **Description:** Drop to 1 HP. Gain mana equal to the HP lost.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -27675,7 +27675,7 @@ BlackMagic {
 ### `BlackMagic2`
 **Name:** Black Magic  
 **Description:** Drop to 1 HP. Gain mana equal to the HP lost and gain All Stats Up 2.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -27987,7 +27987,7 @@ Magnify {
 
 ### `Magnify2`
 **Description:** Your basic attack gains +2 range and +1 area until the end of the turn.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `mage_abilities.gon`  
 
 ```
@@ -28284,7 +28284,7 @@ Malaise2 {
 ### `OpenWounds`
 **Name:** Open Wounds  
 **Description:** A spell that deals more damage the less health the target unit has.
-[s:.7](based on their health percent)[/s]  
+\[s:.7\](based on their health percent)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -28326,7 +28326,7 @@ OpenWounds {
 
 ### `OpenWounds2`
 **Description:** A spell that deals even more damage the less health the target unit has.
-[s:.7](based on their health percent)[/s]  
+\[s:.7\](based on their health percent)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -28736,7 +28736,7 @@ Zealot {
 
 ### `Zealot2`
 **Description:** Gain +1 [img:divineshield].
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -28929,7 +28929,7 @@ BuddyUp {
 
 ### `BuddyUp2`
 **Description:** Jump to an open tile next to an ally.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -28994,7 +28994,7 @@ HealingFall {
 
 ### `HealingFall2`
 **Description:** Jump to an open tile, then heal each adjacent unit.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -29230,7 +29230,7 @@ Rebuke2 {
 ### `Wish`
 **Name:** Wish  
 **Description:** Target an area. At the beginning of your next turn, heal all units in that area.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -29274,7 +29274,7 @@ Wish {
 
 ### `Wish2`
 **Description:** Target an area. At the beginning of your next turn, heal all units in that area. This spell tracks its target if you directly targeted a unit.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -29338,7 +29338,7 @@ WitchHunt {
 
 ### `WitchHunt2`
 **Description:** Put a bounty on a unit. When that unit dies, it becomes meat and its killer gains All Stats Up.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -29572,7 +29572,7 @@ HolyLight {
 
 ### `HolyLight2`
 **Description:** Heal allies and damage enemies in an area. This spell has half effect outside its center.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -29817,7 +29817,7 @@ Benediction {
 
 ### `Benediction2`
 **Description:** Heal EVERYTHING for 2 HP.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -30018,7 +30018,7 @@ Enlighten {
 
 ### `Enlighten2`
 **Description:** Another unit's next spell is free. Infinite range.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -30470,7 +30470,7 @@ ChosenWarrior {
 ### `ChosenWarrior2`
 **Description:** Give a unit +1 Damage and +1 Magic Damage. That unit becomes the Alpha.
 If there is an Alpha, this spell must target it and it gives +1 bonus attack.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -30579,7 +30579,7 @@ SwiftSanctify2 {
 ### `DivineGift`
 **Name:** Divine Gift  
 **Description:** Gain All Stats Up. This spell costs 1 mana less for each HP you healed other units this turn.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -30623,7 +30623,7 @@ DivineGift { //todo: track X globally for this
 
 ### `DivineGift2`
 **Description:** Gain All Stats Up and +1 [img:divineshield]. This spell costs 1 mana less for each HP you healed other units this turn.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -30648,7 +30648,7 @@ DivineGift2 {
 ### `HolyWeapon`
 **Name:** Holy Weapon  
 **Description:** A dash attack with range, damage, and knockback equal to the amount of HP you healed other units this turn.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -30700,7 +30700,7 @@ HolyWeapon {
 
 ### `HolyWeapon2`
 **Description:** A dash attack with range, damage, and knockback equal to twice the amount of HP you healed other units this turn.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -31145,7 +31145,7 @@ Emergency {
 
 ### `Emergency2`
 **Description:** Run next to the ally with the most missing health. Trample all in the way.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -31215,7 +31215,7 @@ GuardianAngel {
 
 ### `GuardianAngel2`
 **Description:** Make a unit anywhere The Alpha.
-[s:.7](This spell costs less.)[/s]
+\[s:.7\](This spell costs less.)\[/s\]
 Bonus Passive: The Alpha has +50% dodge chance.  
 **Source:** `medic_abilities.gon`  
 
@@ -31506,7 +31506,7 @@ CircleOfProtection {
 
 ### `CircleOfProtection2`
 **Description:** Give +1 [img:divineshield] and +1 Health Regeneration to each unit within 2 tiles of you.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `medic_abilities.gon`  
 
 ```
@@ -32309,7 +32309,7 @@ HipToss2 {
 ### `Bruise`
 **Name:** Bruise  
 **Description:** Your basic attack inflicts Bruise until the end of the turn.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -32425,7 +32425,7 @@ Slapback2 {
 ### `Finisher`
 **Name:** Finisher  
 **Description:** Dash forward three tiles and attack. This deals 2 damage for each action you've taken this turn.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -32467,7 +32467,7 @@ Finisher {
 
 ### `Finisher2`
 **Description:** Dash forward three tiles and attack. This deals 2 damage for each action you've taken this turn.
-[s:.7](This spell costs 0 mana. Castable once per turn.)[/s]  
+\[s:.7\](This spell costs 0 mana. Castable once per turn.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -32489,7 +32489,7 @@ Finisher2 {
 ### `Reverberate`
 **Name:** Reverberate  
 **Description:** Gain +8 [img:shield] and knock back adjacent units two tiles. This spell costs 3 mana less for each action you've taken this turn.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -32539,7 +32539,7 @@ Reverberate {
 
 ### `Reverberate2`
 **Description:** Gain +8 [img:shield] and knock back adjacent units two tiles. This spell costs 3 mana less and grants 1 extra [img:shield] for each action you've taken this turn.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -32603,7 +32603,7 @@ ComboThrow {
 
 ### `ComboThrow2`
 **Description:** A melee attack with Knockback 3. When this hits, switch into ranged stance and refresh your basic attack.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -32665,7 +32665,7 @@ ComboPull {
 
 ### `ComboPull2`
 **Description:** A ranged attack that pulls the unit it hits toward you. When this hits, switch into melee stance and refresh your basic attack.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -32852,7 +32852,7 @@ TrainArms {
 
 ### `TrainArms2`
 **Description:** For the rest of the battle, you can attack an extra time each turn.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -33196,7 +33196,7 @@ TrainMind {
 
 ### `TrainMind2`
 **Description:** For the rest of the battle, the first spell you cast each turn is cast twice.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -33257,7 +33257,7 @@ Meditate {
 ### `Meditate2`
 **Name:** Meditate  
 **Description:** Heal yourself for 8 HP and gain +8 Shield, All Stats Up 2, and Drowsy 8.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -33336,7 +33336,7 @@ DoomPunch {
 
 ### `DoomPunch2`
 **Description:** A melee attack that causes a unit to die at the end of its next turn. Bosses fall asleep at the end of their next turn instead.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -33531,7 +33531,7 @@ TrainLegs {
 
 ### `TrainLegs2`
 **Description:** For the rest of the battle, you can move an extra time each turn.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -33945,7 +33945,7 @@ TrainBody {
 
 ### `TrainBody2`
 **Description:** Gain +1 Brace.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -34005,7 +34005,7 @@ ReleaseEnergy {
 
 ### `ReleaseEnergy2`
 **Description:** Emit 10 Sparkles.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -34062,7 +34062,7 @@ Pummel {
 
 ### `Pummel2`
 **Description:** A melee attack that does 4 more damage each time you use it on the same turn. This attack inflicts all status effects your basic attack does.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -34133,7 +34133,7 @@ QuickAttack {
 
 ### `QuickAttack2`
 **Description:** Teleport, then use your basic attack on an enemy within range. This spell's range is increased by 2 for each empty armor slot you have.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -34464,7 +34464,7 @@ SpiritBomb2 {
 ### `ThrowSpiritBomb`
 **Name:** Throw Spirit Bomb  
 **Description:** Throw the Spirit Bomb, then this ability becomes Charge Spirit Bomb.
-[s:.7](Cannot be thrown with 0 charges.)[/s]  
+\[s:.7\](Cannot be thrown with 0 charges.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -34601,7 +34601,7 @@ DonateEnergy2 {
 **Name:** One Punch  
 **Description:** A one-hit kill punch. Gain All Stats Down on use.
 This deals 25 damage to bosses instead of killing them.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -34645,7 +34645,7 @@ OnePunch {
 **Name:** One Punch  
 **Description:** A one-hit kill punch. It causes a cone of wind that deals 5 damage. Gain All Stats Down on use.
 This deals 25 damage to bosses instead of killing them.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -34737,7 +34737,7 @@ UnbridledHits2 {
 ### `Kamehameha`
 **Name:** Kamehameha  
 **Description:** Fire a magic blast at a unit within 5 tiles. Requires line of sight.
-[s:.7](Castable once per battle. If all your armor slots are empty, castable once per turn.)[/s]  
+\[s:.7\](Castable once per battle. If all your armor slots are empty, castable once per turn.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -34787,7 +34787,7 @@ Kamehameha {
 
 ### `Kamehameha2`
 **Description:** Fire a magic blast at a unit anywhere within your line of sight.
-[s:.7](Castable once per battle. If all your armor slots are empty, castable once per turn.)[/s]  
+\[s:.7\](Castable once per battle. If all your armor slots are empty, castable once per turn.)\[/s\]  
 **Source:** `monk_abilities.gon`  
 
 ```
@@ -35744,7 +35744,7 @@ Pestilence {
 
 ### `Pestilence2`
 **Description:** Deal 1 damage to all units.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -36674,7 +36674,7 @@ Whisper2 {
 ### `SummonShade`
 **Name:** Summon Shade  
 **Description:** Spawn a shadow copy of yourself that fades after its first turn.
-[s:.7](The copy can't cast this ability or give extra turns to units.)[/s]  
+\[s:.7\](The copy can't cast this ability or give extra turns to units.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -36728,7 +36728,7 @@ SummonShade {
 
 ### `SummonShade2`
 **Description:** Spawn a shadow copy of yourself that fades after its second turn.
-[s:.7](The copy can't cast this ability or give extra turns to units.)[/s]  
+\[s:.7\](The copy can't cast this ability or give extra turns to units.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -37222,7 +37222,7 @@ Unearth {
 
 ### `Unearth2`
 **Description:** Dig up a body. It reanimates at the end of the round.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -37320,7 +37320,7 @@ BloodGeyser2 {
 ### `Flatline`
 **Name:** Flatline  
 **Description:** Down yourself. You don't get injured. Spawn a shadow copy of yourself that fades after its first turn.
-[s:.7]The copy can't cast this ability or give extra turns to units.[/s]  
+[s:.7]The copy can't cast this ability or give extra turns to units.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -37380,8 +37380,8 @@ Flatline {
 
 ### `Flatline2`
 **Description:** Down yourself. You don't get injured. Spawn a shadow copy of yourself that fades after its first turn.
-[s:.7]The copy can't cast this ability or give extra turns to units.[/s]
-[s:.7](This spell costs 0 mana.)[/s]  
+[s:.7]The copy can't cast this ability or give extra turns to units.\[/s\]
+\[s:.7\](This spell costs 0 mana.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -37532,7 +37532,7 @@ SummonBones {
 
 ### `SummonBones2`
 **Description:** Summon a skeleton from a body, anywhere.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -37669,7 +37669,7 @@ Bloodletting {
 
 ### `Bloodletting2`
 **Description:** Remove all status effects from another unit, then inflict Bleed 5 on it.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -37740,7 +37740,7 @@ MassPsychosis {
 
 ### `MassPsychosis2`
 **Description:** Inflict Madness on all enemies.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -37872,7 +37872,7 @@ Reap {
 
 ### `Reap2`
 **Description:** Teleport into a unit with 10 or less health and destroy it.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -37898,7 +37898,7 @@ Reap2 {
 ### `Haunt`
 **Name:** Haunt  
 **Description:** Damage any unit and inflict Fear.
-[s:.7]Castable while downed.[/s]  
+[s:.7]Castable while downed.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -37941,7 +37941,7 @@ Haunt {
 ### `Spook`
 **Name:** Spook  
 **Description:** Deal damage to any unit. This has a 25% chance to inflict Fear.
-[s:.7]Castable while downed.[/s]  
+[s:.7]Castable while downed.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -37983,7 +37983,7 @@ Spook {
 ### `CarrionShot`
 **Name:** Carrion Shot  
 **Description:** Deal 1 damage and inflict Leech 1.
-[s:.7]This spell is stronger and castable while you're downed.[/s]  
+[s:.7]This spell is stronger and castable while you're downed.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38029,7 +38029,7 @@ CarrionShot {
 ### `CarrionShot_Afterlife`
 **Name:** Carrion Shot  
 **Description:** Deal 1 damage and inflict Leech 1.
-[s:.7]This spell is stronger and castable while you're downed.[/s]  
+[s:.7]This spell is stronger and castable while you're downed.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38071,7 +38071,7 @@ CarrionShot_Afterlife {
 
 ### `CarrionShot2`
 **Description:** Deal 2 damage and inflict Leech 2.
-[s:.7]This spell is stronger and castable while you're downed.[/s]  
+[s:.7]This spell is stronger and castable while you're downed.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38100,7 +38100,7 @@ CarrionShot2 {
 
 ### `CarrionShot_Afterlife2`
 **Description:** Deal 2 damage and inflict Leech 2.
-[s:.7]This spell is stronger and castable while you're downed.[/s]  
+[s:.7]This spell is stronger and castable while you're downed.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38126,7 +38126,7 @@ CarrionShot_Afterlife2 {
 ### `LifeDrain`
 **Name:** Lifedrain  
 **Description:** Drain 2 HP at melee range.
-[s:.7]This spell is much stronger and castable while you're downed. If this kills a unit, revive with 50% hp.[/s]  
+[s:.7]This spell is much stronger and castable while you're downed. If this kills a unit, revive with 50% hp.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38174,7 +38174,7 @@ LifeDrain {
 ### `LifeDrain_Afterlife`
 **Name:** Lifedrain  
 **Description:** Drain 2 HP at melee range.
-[s:.7]This spell is much stronger and castable while you're downed. If this kills a unit, revive with 50% hp.[/s]  
+[s:.7]This spell is much stronger and castable while you're downed. If this kills a unit, revive with 50% hp.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38221,7 +38221,7 @@ LifeDrain_Afterlife {
 
 ### `LifeDrain2`
 **Description:** Drain 2 HP at melee range.
-[s:.7]This spell is much stronger and castable while you're downed. If this kills a unit, revive with max hp.[/s]  
+[s:.7]This spell is much stronger and castable while you're downed. If this kills a unit, revive with max hp.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38246,7 +38246,7 @@ LifeDrain2 {
 
 ### `LifeDrain_Afterlife2`
 **Description:** Drain 2 HP at melee range.
-[s:.7]This spell is much stronger and castable while you're downed. If this kills a unit, revive with max hp.[/s]  
+[s:.7]This spell is much stronger and castable while you're downed. If this kills a unit, revive with max hp.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38279,7 +38279,7 @@ LifeDrain_Afterlife2 {
 ### `CoffinFlop`
 **Name:** Coffin Flop  
 **Description:** Jump to an open tile in range 2.
-[s:.7]This spell is stronger and castable while you're downed. When downed you can land on units dealing damage and inflicting Madness. [/s]  
+[s:.7]This spell is stronger and castable while you're downed. When downed you can land on units dealing damage and inflicting Madness. \[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38326,7 +38326,7 @@ CoffinFlop {
 ### `CoffinFlop_Afterlife`
 **Name:** Coffin Flop  
 **Description:** Jump to an open tile in range 2.
-[s:.7]This spell is stronger and castable while you're downed. When downed you can land on units dealing damage and inflicting Madness. [/s]  
+[s:.7]This spell is stronger and castable while you're downed. When downed you can land on units dealing damage and inflicting Madness. \[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38376,7 +38376,7 @@ CoffinFlop_Afterlife {
 
 ### `CoffinFlop2`
 **Description:** Jump to an open tile in range 3.
-[s:.7]This spell is stronger and castable while you're downed. When downed you can land on units anywhere dealing damage and inflicting Madness 2. [/s]  
+[s:.7]This spell is stronger and castable while you're downed. When downed you can land on units anywhere dealing damage and inflicting Madness 2. \[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38401,7 +38401,7 @@ CoffinFlop2 {
 
 ### `CoffinFlop_Afterlife2`
 **Description:** Jump to an open tile in range 3.
-[s:.7]This spell is stronger and castable while you're downed. When downed you can land on units anywhere dealing damage and inflicting Madness 2. [/s]  
+[s:.7]This spell is stronger and castable while you're downed. When downed you can land on units anywhere dealing damage and inflicting Madness 2. \[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38432,7 +38432,7 @@ CoffinFlop_Afterlife2 {
 ### `DonateBlood`
 **Name:** Donate Blood  
 **Description:** Heal a unit 5 HP, then take 10 damage.
-[s:.7]Castable while you're downed. If you do, take no damage and give what you heal All Stats Up.[/s]  
+[s:.7]Castable while you're downed. If you do, take no damage and give what you heal All Stats Up.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38481,7 +38481,7 @@ DonateBlood {
 ### `DonateBlood_Afterlife`
 **Name:** Donate Blood  
 **Description:** Heal a unit 5 HP, then take 10 damage.
-[s:.7]Castable while you're downed. If you do, take no damage and give what you heal All Stats Up.[/s]  
+[s:.7]Castable while you're downed. If you do, take no damage and give what you heal All Stats Up.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38525,7 +38525,7 @@ DonateBlood_Afterlife {
 
 ### `DonateBlood2`
 **Description:** Heal all units in an area 5 HP, then take 10 damage.
-[s:.7]Castable while you're downed. If you do, take no damage and give what you heal All Stats Up.[/s]  
+[s:.7]Castable while you're downed. If you do, take no damage and give what you heal All Stats Up.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38551,7 +38551,7 @@ DonateBlood2 {
 
 ### `DonateBlood_Afterlife2`
 **Description:** Heal all units in an area 5 HP, then take 10 damage.
-[s:.7]Castable while you're downed. If you do, take no damage and give what you heal All Stats Up.[/s]  
+[s:.7]Castable while you're downed. If you do, take no damage and give what you heal All Stats Up.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38574,7 +38574,7 @@ DonateBlood_Afterlife2 {
 ### `Seance`
 **Name:** Seance  
 **Description:** Spawn a ghost Familiar that fades after its first turn.
-[s:.7]Castable while you're downed. If you do, spawn a shadow copy of yourself instead.[/s]  
+[s:.7]Castable while you're downed. If you do, spawn a shadow copy of yourself instead.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38628,7 +38628,7 @@ Seance {
 ### `Seance_Afterlife`
 **Name:** Seance  
 **Description:** Spawn a ghost Familiar that fades after its first turn.
-[s:.7]Castable while you're downed. If you do, spawn a shadow copy of yourself instead.[/s]  
+[s:.7]Castable while you're downed. If you do, spawn a shadow copy of yourself instead.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38683,7 +38683,7 @@ Seance_Afterlife {
 
 ### `Seance2`
 **Description:** Spawn a ghost Familiar that fades after its second turn.
-[s:.7]Castable while you're downed. If you do, spawn a shadow copy of yourself instead.[/s]  
+[s:.7]Castable while you're downed. If you do, spawn a shadow copy of yourself instead.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38710,7 +38710,7 @@ Seance2 {
 
 ### `Seance_Afterlife2`
 **Description:** Spawn a ghost Familiar that fades after its second turn.
-[s:.7]Castable while you're downed. If you do, spawn a shadow copy of yourself instead.[/s]  
+[s:.7]Castable while you're downed. If you do, spawn a shadow copy of yourself instead.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38791,7 +38791,7 @@ GoLimp2 {
 ### `DemonicPact`
 **Name:** Demonic Pact  
 **Description:** Injure yourself and take an extra turn.
-[s:.7](This spell can't be cast on extra turns.)[/s]  
+\[s:.7\](This spell can't be cast on extra turns.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38827,7 +38827,7 @@ DemonicPact {
 
 ### `DemonicPact2`
 **Description:** Injure yourself and take an extra turn.
-[s:.7](This spell costs less. This spell can't be cast on extra turns.)[/s]  
+\[s:.7\](This spell costs less. This spell can't be cast on extra turns.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -38947,7 +38947,7 @@ Curse {
 
 ### `Curse2`
 **Description:** Give a unit -4 [img:lck].
-[s:.7](This spell has increased range)[/s]  
+\[s:.7\](This spell has increased range)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -39262,7 +39262,7 @@ ReaperStep2 {
 **Name:** Forbidden Famine  
 **Description:** Inflict Weakness 5, Poison 2, and Madness 2 on all enemies.
 There are permanent consequences for casting this spell… but maybe not for you. 
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -39327,7 +39327,7 @@ ForbiddenFamine {
 ### `ForbiddenFamine2`
 **Description:** Inflict Leech 2, Weakness 5, Poison 2, and Madness 2 on all enemies.
 There are permanent consequences for casting this spell… but maybe not for you. 
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -39356,7 +39356,7 @@ ForbiddenFamine2 {
 ### `FleshGolem`
 **Name:** Flesh Golem  
 **Description:** You and all allies lose 7 HP. Summon a flesh golem with one random spell from each of those units.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -39410,7 +39410,7 @@ FleshGolem {
 
 ### `FleshGolem2`
 **Description:** You and all allies lose 7 HP. Summon a flesh golem with one random spell and random passives from each of those units.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -39432,7 +39432,7 @@ FleshGolem2 {
 ### `TradeLife`
 **Name:** Trade Life  
 **Description:** Swap HP with an ally in range 3.
-[s:.7]Castable while you're downed. If this spell downs you or the ally, neither are injured.[/s]  
+[s:.7]Castable while you're downed. If this spell downs you or the ally, neither are injured.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -39481,7 +39481,7 @@ TradeLife {
 
 ### `TradeLife2`
 **Description:** Swap HP with any ally.
-[s:.7]Castable while you're downed. If this spell downs you or the ally, neither are injured.[/s]  
+[s:.7]Castable while you're downed. If this spell downs you or the ally, neither are injured.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -39507,7 +39507,7 @@ TradeLife2 {
 ### `TradeLife_Afterlife`
 **Name:** Trade Life  
 **Description:** Swap HP with an ally in range 3.
-[s:.7]Castable while you're downed. If this spell downs you or the ally, neither are injured.[/s]  
+[s:.7]Castable while you're downed. If this spell downs you or the ally, neither are injured.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -39553,7 +39553,7 @@ TradeLife_Afterlife {
 
 ### `TradeLife_Afterlife2`
 **Description:** Swap HP with any ally.
-[s:.7]Castable while you're downed. If this spell downs you or the ally, neither are injured.[/s]  
+[s:.7]Castable while you're downed. If this spell downs you or the ally, neither are injured.\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -39575,7 +39575,7 @@ TradeLife_Afterlife2 {
 ### `AbsorbSoul`
 **Name:** Absorb Soul  
 **Description:** Down an ally in range 5 and steal their mana. It doesn't get injured.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -39621,7 +39621,7 @@ AbsorbSoul {
 
 ### `AbsorbSoul2`
 **Description:** Down any ally and steal their mana. It doesn't get injured.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -39695,7 +39695,7 @@ Gravecrawl {
 ### `Gravecrawl2`
 **Name:** Gravecrawl  
 **Description:** Dig to any tile and unearth 1-3 bodies.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -39793,7 +39793,7 @@ DigUpTheDead {
 
 ### `DigUpTheDead2`
 **Description:** Dig to any tile and unearth 4 zombies.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `necromancer_abilities.gon`  
 
 ```
@@ -40273,7 +40273,7 @@ PsyFlutter {
 
 ### `PsyFlutter2`
 **Description:** Teleport exactly three tiles away.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -41194,7 +41194,7 @@ FlashForward {
 
 ### `FlashForward2`
 **Description:** Teleport to any tile. At the end of your turn, teleport back to your original tile and deal 10 damage to any unit you teleport into.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -41753,7 +41753,7 @@ FutureSight {
 
 ### `FutureSight2`
 **Description:** A unit within your line of sight backflips out of the way the next time they're targeted by an enemy.
- [s:.7](This spell costs less.)[/s]  
+ \[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -42095,7 +42095,7 @@ CumulativeBlast {
 
 ### `CumulativeBlast2`
 **Description:** Deal damage to a unit in your line of sight, then increase this spell's damage by 1 for the rest of the battle.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -42240,7 +42240,7 @@ MassHysteria {
 
 ### `MassHysteria2`
 **Description:** Every enemy in your line of sight takes an extra turn. They are charmed on that turn.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -42262,7 +42262,7 @@ MassHysteria2 {
 ### `ExtraTurnQuestion`
 **Name:** Extra Turn?  
 **Description:** Take an extra turn. You're stunned and don't regenerate mana on that turn.
-[s:.7](This spell can't be cast on extra turns.)[/s]  
+\[s:.7\](This spell can't be cast on extra turns.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -42301,7 +42301,7 @@ ExtraTurnQuestion {
 
 ### `ExtraTurnQuestion2`
 **Description:** Take an extra turn. You have a 75% chance to be stunned and don't regenerate mana on that turn.
-[s:.7](This spell can't be cast on extra turns.)[/s]  
+\[s:.7\](This spell can't be cast on extra turns.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -42399,7 +42399,7 @@ MindCrack2 {
 ### `Reset`
 **Name:** Reset  
 **Description:** Revive all bodies, fully heal all units, and clear all status effects.
-[s:.7](This spell can be cast only once per battle.)[/s]  
+\[s:.7\](This spell can be cast only once per battle.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -42448,7 +42448,7 @@ Reset {
 ### `Reset2`
 **Description:** Revive all bodies, fully heal all units, and clear all status effects.
 Castable while you're downed. It costs 0 mana if you're downed.
-[s:.7](This spell can be cast only once per battle.)[/s]  
+\[s:.7\](This spell can be cast only once per battle.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -42524,7 +42524,7 @@ Mimic {
 
 ### `Mimic2`
 **Description:** Target an allied cat within your line of sight. Cast one of their spells at random for free (or use their basic attack if theres no good spells).
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -42755,7 +42755,7 @@ Stasis2 {
 **Name:** Pass  
 **Description:** Give a unit within your line of sight an extra turn immediately, then end your turn. 
 Castable only if you haven't taken any actions this turn.
-[s:.7](This can't be cast on extra turns.)[/s]  
+\[s:.7\](This can't be cast on extra turns.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -42806,7 +42806,7 @@ Pass {
 ### `Pass2`
 **Description:** Give a unit within your line of sight an extra turn immediately, then end your turn.
 Castable only if you haven't taken any actions this turn other than your movement action.
-[s:.7](This can't be cast on extra turns.)[/s]  
+\[s:.7\](This can't be cast on extra turns.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -42830,7 +42830,7 @@ Pass2 {
 ### `ThinkDeep`
 **Name:** Think Deep  
 **Description:** Restore all of your mana and fall asleep.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -42866,7 +42866,7 @@ ThinkDeep {
 
 ### `ThinkDeep2`
 **Description:** Restore all of your mana and fall asleep.
-[s:.7](Castable once per turn. This spell costs 0 mana.)[/s]  
+\[s:.7\](Castable once per turn. This spell costs 0 mana.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -43358,7 +43358,7 @@ Withdraw {
 
 ### `Withdraw2`
 **Description:** Pull any unit within your line of sight to a tile adjacent to you.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -43492,7 +43492,7 @@ Inversion {
 
 ### `Inversion2`
 **Description:** Swap positions with a unit in your line of sight.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `psychic_abilities.gon`  
 
 ```
@@ -43789,7 +43789,7 @@ HeadButt {
 
 ### `HeadButt2`
 **Description:** A melee attack that inflicts Stun.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -44389,7 +44389,7 @@ Toss2 {
 ### `BonusToss`
 **Name:** Toss  
 **Description:** Throw an adjacent unit to an open tile.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -44429,7 +44429,7 @@ BonusToss { //bonus ability for Wrestlemania
 
 ### `BonusToss2`
 **Description:** Throw an adjacent unit to a tile, dealing bonus damage if it collides with something.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -44457,7 +44457,7 @@ BonusToss2 { //bonus ability for Wrestlemania
 ### `NubbyToss`
 **Name:** Toss  
 **Description:** Throw your crippled friend to any tile.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -44954,7 +44954,7 @@ TankTantrum2 {
 ### `Earthquake`
 **Name:** Earthquake  
 **Description:** Deal damage in a cone with a 10% chance to Petrify. Has a chance to spawn rocks.
-[s:.7](This spell spawns rocks.)[/s]  
+\[s:.7\](This spell spawns rocks.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -45006,7 +45006,7 @@ Earthquake {
 
 ### `Earthquake2`
 **Description:** Deal more damage in a cone with a 20% chance to Petrify. Has a chance to spawn rocks.
-[s:.7](This spell spawns rocks.)[/s]  
+\[s:.7\](This spell spawns rocks.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -45112,7 +45112,7 @@ RockToss2 {
 ### `BarbedWire`
 **Name:** Barbed Wire  
 **Description:** Give a unit +5 Thorns until your next turn.
-[s:.7](You can target yourself.)[/s]  
+\[s:.7\](You can target yourself.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -45162,7 +45162,7 @@ BarbedWire {
 ### `BarbedWire2`
 **Name:** Barbed Wire  
 **Description:** Give a unit or object +5 Thorns until your next turn.
-[s:.7](You can target yourself.)[/s]  
+\[s:.7\](You can target yourself.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -45258,7 +45258,7 @@ DrawAttention {
 
 ### `DrawAttention2`
 **Description:** Force an enemy anywhere to move towards you.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -45473,7 +45473,7 @@ TankRockSong {
 
 ### `TankRockSong2`
 **Description:** Levitate all rocks. They will automatically fling towards enemies that end movement in line with them.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -45869,7 +45869,7 @@ RockBlast { //TODO: make less janky
 
 ### `RockBlast2`
 **Description:** Shoot a rock forward with Chain Knockback.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -45941,7 +45941,7 @@ RockTomb {
 
 ### `RockTomb2`
 **Description:** Damage and Petrify a unit within 5 tiles of you.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -46236,8 +46236,8 @@ BigRock2 {
 ### `FlipFlop`
 **Name:** Flip Flop  
 **Description:** Jump up to 3 tiles away, damage units you land on, then gain -1 [img:spd].
-[s:.7](This spell's mana cost is equal to your [img:spd].
-At 0 [img:spd], this spell is Castable once per turn.)[/s]  
+\[s:.7\](This spell's mana cost is equal to your [img:spd].
+At 0 [img:spd], this spell is Castable once per turn.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -46293,8 +46293,8 @@ FlipFlop {
 ### `FlipFlop2`
 **Description:** Jump up to 4 tiles away, damage units you land on, then gain -1 [img:spd].
 If your [img:spd] is 0, this has increased range and damage.
-[s:.7](This spell's mana cost is equal to your [img:spd].
-At 0 [img:spd], this spell is Castable once per turn.)[/s]  
+\[s:.7\](This spell's mana cost is equal to your [img:spd].
+At 0 [img:spd], this spell is Castable once per turn.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -46391,7 +46391,7 @@ Lunge2 {
 ### `Nudge`
 **Name:** Nudge  
 **Description:** Push a unit back 1 tile.
-[s:.7](This spell costs 0 mana the first time it's used each turn.)[/s]  
+\[s:.7\](This spell costs 0 mana the first time it's used each turn.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -46429,7 +46429,7 @@ Nudge {
 
 ### `Nudge2`
 **Description:** Push a unit back 10 tiles.
-[s:.7](This spell costs 0 mana the first time it's used each turn.)[/s]  
+\[s:.7\](This spell costs 0 mana the first time it's used each turn.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -46503,7 +46503,7 @@ StoneGaze {
 
 ### `StoneGaze2`
 **Description:** Inflict Petrify and Knockback on the first unit in a line.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -46574,7 +46574,7 @@ Medusa {
 
 ### `Medusa2`
 **Description:** Inflict Petrify on all units in your line of sight.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -46789,7 +46789,7 @@ EatRock2 {
 **Name:** Plant Your Feet  
 **Description:** Gain +5 [img:shield] and -1 [img:spd]. 
 If you are at 0 [img:spd], instead cleanse all of your debuffs.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -46830,7 +46830,7 @@ PlantFeet {
 ### `PlantFeet2`
 **Description:** Gain +6 [img:shield] and -1 [img:spd].
 If you are at 0 [img:spd], instead cleanse all of your debuffs and gain All Stats Up.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -47574,7 +47574,7 @@ Spur2 {
 ### `Supper`
 **Name:** Supper  
 **Description:** Heal 15 HP and gain -2 [img:spd].
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -47610,7 +47610,7 @@ Supper {
 
 ### `Supper2`
 **Description:** Heal 15 HP, gain -2 [img:spd] and +5 Health Regeneration.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -47751,7 +47751,7 @@ Sandstorm {
 **Description:** Start a sandstorm.
 (Sandstorm deals 1 damage to all units at the end of round.)
 If a sandstorm was already active, increase its damage by 1.
-[s:.7](This spell costs 0 mana the first time you cast it each turn.)[/s]  
+\[s:.7\](This spell costs 0 mana the first time you cast it each turn.)\[/s\]  
 **Source:** `tank_abilities.gon`  
 
 ```
@@ -47887,7 +47887,7 @@ Assassinate {
 
 ### `Assassinate2`
 **Description:** A melee attack that can only hit from behind. This attack ignores shield and has 100% crit chance.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -48288,7 +48288,7 @@ Double2 {
 **Name:** Coin Toss  
 **Description:** Throw a coin that deals damage.
 RELOAD: Collect a coin.
-[s:.7]This spell costs more mana each additional time you use it on the same turn.[/s]  
+[s:.7]This spell costs more mana each additional time you use it on the same turn.\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -48336,7 +48336,7 @@ CoinToss {
 ### `CoinToss2`
 **Description:** Throw a coin at infinite range with +50% crit chance that ignores shield.
 RELOAD: Collect a coin.
-[s:.7]This spell costs more mana each additional time you use it on the same turn.[/s]  
+[s:.7]This spell costs more mana each additional time you use it on the same turn.\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -48397,7 +48397,7 @@ MoveAgain { //TODO: disable ability until you are actually out of move points
 
 ### `MoveAgain2`
 **Description:** Refresh your movement action.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -48453,7 +48453,7 @@ AttackAgain { //TODO: disable ability until you are actually out of act points
 
 ### `AttackAgain2`
 **Description:** Refresh your basic attack.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -48531,7 +48531,7 @@ Camouflage2 {
 ### `Shadow`
 **Name:** Shadow  
 **Description:** Teleport behind a unit.
-[s:.7]Nothin' personnel, kid.[/s]  
+[s:.7]Nothin' personnel, kid.\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -48567,7 +48567,7 @@ Shadow {
 
 ### `Shadow2`
 **Description:** Teleport behind a unit. Your next action has +100% crit chance.
-[s:.7]Nothin' personnel, kid.[/s]  
+[s:.7]Nothin' personnel, kid.\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -48595,7 +48595,7 @@ Shadow2 {
 ### `TimeWalk`
 **Name:** Time Walk  
 **Description:** Take an extra turn at the end of the round.
-[s:.7](This spell can't be cast on extra turns.)[/s]  
+\[s:.7\](This spell can't be cast on extra turns.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -48631,7 +48631,7 @@ TimeWalk {
 
 ### `TimeWalk2`
 **Description:** Take an extra turn at the end of the round.
-[s:.7](This spell can't be cast on extra turns. This spell costs less.)[/s]  
+\[s:.7\](This spell can't be cast on extra turns. This spell costs less.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -49081,7 +49081,7 @@ Backflip {
 
 ### `Backflip2`
 **Description:** Backflip out of the way the next time you're targeted by an enemy.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -49263,7 +49263,7 @@ GreedStep2 {
 ### `Stalk`
 **Name:** Stalk  
 **Description:** Target any enemy. Teleport behind it at the start of your next turn.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -49303,7 +49303,7 @@ Stalk {
 
 ### `Stalk2`
 **Description:** Target any enemy. Teleport behind it at the start of your next turn.
-[s:.7](Castable once per turn. Costs 0 mana.)[/s]  
+\[s:.7\](Castable once per turn. Costs 0 mana.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -49556,7 +49556,7 @@ Slice {
 
 ### `Slice2`
 **Description:** A melee attack that has all effects of your basic attack and ignores shield.
-[s:.7](This spell is free the 1st time you use it each turn.)[/s]  
+\[s:.7\](This spell is free the 1st time you use it each turn.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -49699,7 +49699,7 @@ Nightshade {
 
 ### `Nightshade2`
 **Description:** Inflict Poison 4 on an adjacent unit.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -49721,7 +49721,7 @@ Nightshade2 {
 ### `Shadowshift`
 **Name:** Shadow Shift  
 **Description:** Teleport exactly 2 tiles away, leaving behind a shadow that mimics your basic attack.
-[s:.7](The shadow fades at the end of your turn.)[/s]  
+\[s:.7\](The shadow fades at the end of your turn.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -49763,7 +49763,7 @@ Shadowshift {
 
 ### `Shadowshift2`
 **Description:** Teleport up to 3 tiles away, leaving behind a shadow that mimics your basic attack.
-[s:.7](The shadow fades at the end of your turn.)[/s]  
+\[s:.7\](The shadow fades at the end of your turn.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -49786,7 +49786,7 @@ Shadowshift2 {
 ### `SlingShade`
 **Name:** Slingshade  
 **Description:** Spawn a shadow up to 3 tiles away that mimics your basic attack.
-[s:.7](The shadow fades at the end of your turn.)[/s]  
+\[s:.7\](The shadow fades at the end of your turn.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -49834,8 +49834,8 @@ SlingShade {
 
 ### `SlingShade2`
 **Description:** Spawn a shadow up to 5 tiles away that mimics your basic attack.
-[s:.7](The shadow fades at the end of your turn.)[/s]
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](The shadow fades at the end of your turn.)\[/s\]
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -50107,7 +50107,7 @@ VenomBarrage2 {
 ### `LootCorpse`
 **Name:** Loot Corpse  
 **Description:** Loot 1-3 coins from a body... and possibly something else?
-[s:.7](This might destroy the body)[/s]  
+\[s:.7\](This might destroy the body)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -50161,8 +50161,8 @@ LootCorpse {
 
 ### `LootCorpse2`
 **Description:** Loot 1-3 coins from a body... and possibly something else?
-[s:.7](This might not destroy the body)[/s]
-[s:.7](Your chance of finding "something else" is significantly increased.)[/s]  
+\[s:.7\](This might not destroy the body)\[/s\]
+\[s:.7\](Your chance of finding "something else" is significantly increased.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -50347,7 +50347,7 @@ SharpenNail {
 
 ### `SharpenNail2`
 **Description:** Gain +1 [img:dex] and +1 Range until the end of the battle.
-[s:.7]Automatically cast this spell at the end of each round for free.[/s]  
+[s:.7]Automatically cast this spell at the end of each round for free.\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -50406,7 +50406,7 @@ SneakUp {
 
 ### `SneakUp2`
 **Description:** Teleport directly behind a random enemy.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -50621,7 +50621,7 @@ StealLuck2 {
 ### `ThiefSwap`
 **Name:** Over Here, Over There  
 **Description:** Swap positions with an ally. Swap back at the end of your turn.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -50663,7 +50663,7 @@ ThiefSwap {
 
 ### `ThiefSwap2`
 **Description:** Swap positions with any unit. Swap back at the end of your turn. If the unit was an enemy, inflict Confusion 1.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -50747,7 +50747,7 @@ Pierce {
 
 ### `Pierce2`
 **Description:** Gain +4 Range. Your attacks pass through units and ignore shield for the rest of the turn.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -50896,7 +50896,7 @@ TripleNails2 {
 ### `SkinDisguise`
 **Name:** Skin Disguise  
 **Description:** Destroy an adjacent body. Enemies won't attack you until your next turn.
-[s:.7](Castable once per turn.)[/s]  
+\[s:.7\](Castable once per turn.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -50944,7 +50944,7 @@ SkinDisguise {
 
 ### `SkinDisguise2`
 **Description:** Destroy a body in range 3. Enemies won't attack you until your next turn.
-[s:.7](This spell is free. Castable once per turn.)[/s]  
+\[s:.7\](This spell is free. Castable once per turn.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -51227,7 +51227,7 @@ Outskirts2 {
 ### `PoisonDip`
 **Name:** Poison Dip  
 **Description:** Spend all your mana. For every 5 mana spent, your basic attack inflicts +1 Poison.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -51269,7 +51269,7 @@ PoisonDip {
 
 ### `PoisonDip2`
 **Description:** Spend all your mana. For every 3 mana spent, your basic attack inflicts +1 Poison.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `thief_abilities.gon`  
 
 ```
@@ -52049,7 +52049,7 @@ AutoPilot {
 
 ### `AutoPilot2`
 **Description:** You or another unit takes an extra turn after this one. That unit is AI controlled on that turn.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -52573,7 +52573,7 @@ ElectricNail {
 
 ### `ElectricNail2`
 **Description:** Summon a nail that arcs electricity to neighboring tiles whenever any unit spends mana.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -52720,7 +52720,7 @@ Shockwave {
 
 ### `Shockwave2`
 **Description:** Deal damage to all units. The closer a unit is to you the more damage it takes.
-[s:.7](Deals more damage to closer units and less damage to further units.)[/s]  
+\[s:.7\](Deals more damage to closer units and less damage to further units.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -52950,7 +52950,7 @@ Improve2 {
 ### `Catbot`
 **Name:** Catbot  
 **Description:** Spawn a Catbot and give it your current weapon.
-[s:.7](You will not get the weapon back)[/s]  
+\[s:.7\](You will not get the weapon back)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -52994,7 +52994,7 @@ Catbot {
 
 ### `Catbot2`
 **Description:** Spawn a Catbot and give it your current weapon. Gain +1 Tech and refresh your basic action.
-[s:.7](You will not get the weapon back)[/s]  
+\[s:.7\](You will not get the weapon back)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -53062,7 +53062,7 @@ Bombchu {
 
 ### `Bombchu2`
 **Description:** Spawn a Bombchu bot in range 4.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -53135,7 +53135,7 @@ RemoteDetonator {
 
 ### `RemoteDetonator2`
 **Description:** Explode a familiar, dealing 5 damage with knockback in an area.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -53273,7 +53273,7 @@ Electrolyze {
 
 ### `Electrolyze2`
 **Description:** Give your weapon +3 electric damage.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -53332,7 +53332,7 @@ EjectButton {
 
 ### `EjectButton2`
 **Description:** Explode and fly to a random tile at least four tiles away. This explosion damages you.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -53495,7 +53495,7 @@ Upgrade2 {
 ### `Eureka`
 **Name:** Eureka!  
 **Description:** Gain +3 Tech and Madness 1.
-[s:.7](This spell can only be cast once per battle.)[/s]  
+\[s:.7\](This spell can only be cast once per battle.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -53536,7 +53536,7 @@ Eureka {
 ### `Eureka2`
 **Name:** Eureka!  
 **Description:** Gain +3 Tech.
-[s:.7](This spell can only be cast once per battle.)[/s]  
+\[s:.7\](This spell can only be cast once per battle.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -53920,7 +53920,7 @@ MechExplode {
 ### `MechSuit`
 **Name:** Mech Suit  
 **Description:** Summon a mech suit that can be piloted.
-[s:.7](Castable once per battle.)[/s]  
+\[s:.7\](Castable once per battle.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -53979,7 +53979,7 @@ MechSuit {
 
 ### `MechSuit2`
 **Description:** Summon a mech suit that can be piloted.
-[s:.7](Costs 0 mana. Castable once per battle.)[/s]  
+\[s:.7\](Costs 0 mana. Castable once per battle.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -54045,7 +54045,7 @@ UnreliableShield {
 
 ### `UnreliableShield2`
 **Description:** Get +6 [img:shield] and +1 temporary Brace. This spell has a 66% chance to be disabled on each turn.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -54130,7 +54130,7 @@ UnreliableMissile {
 
 ### `UnreliableMissile2`
 **Description:** Shoot an explosive homing missile at a random enemy. This spell has a 66% chance to be disabled on each turn.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -54230,7 +54230,7 @@ SpareParts2 {
 ### `BatteryNuke`
 **Name:** Split the Atom  
 **Description:** Deal 50 damage to and inflict Burn 10 on all enemies. You can pay for this spell over multiple turns.
-[s:.7](This spell's mana cost can't be modified.)[/s]  
+\[s:.7\](This spell's mana cost can't be modified.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -54284,7 +54284,7 @@ BatteryNuke {
 ### `BatteryNuke2`
 **Description:** Deal 50 damage to and inflict Burn 10 on all enemies. You can pay for this spell over multiple turns.
 This spell absorbs the mana you spend casting other spells.
-[s:.7](This spell's mana cost can't be modified.)[/s]  
+\[s:.7\](This spell's mana cost can't be modified.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -54356,7 +54356,7 @@ ExperimentalTeleporter {
 
 ### `ExperimentalTeleporter2`
 **Description:** Teleport to any tile. You have a 15% chance to equip a piece of Fly armor that breaks any armor pieces it replaces.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -54698,7 +54698,7 @@ Smash {
 
 ### `Smash2`
 **Description:** Smash your weapon onto an adjacent unit, destroying it and dealing double its damage.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -54911,7 +54911,7 @@ RocketRide {
 
 ### `RocketRide2`
 **Description:** Jump to any open tile. Explode when you land. (This explosion also damages you.)
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -55105,7 +55105,7 @@ NurseBot {
 
 ### `NurseBot2`
 **Description:** Spawn a nurse bot that heals allies.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```
@@ -55347,7 +55347,7 @@ Fabricate {
 
 ### `Fabricate2`
 **Description:** Give an ally in range 3 a temporary copy of your weapon, if they don't have a weapon.
-[s:.7](This spell costs less.)[/s]  
+\[s:.7\](This spell costs less.)\[/s\]  
 **Source:** `tinkerer_abilities.gon`  
 
 ```

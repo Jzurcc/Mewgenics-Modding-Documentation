@@ -43,10 +43,8 @@ If you require access to the source definition for a specific item, enemy, or pa
 - [`Passives.md`](./Items_and_Passives/Passives.md)
 
 ### Statuses and Injuries
-- [`Disorders.md`](./Statuses_and_Injuries/Disorders.md)
 - [`Injuries.md`](./Statuses_and_Injuries/Injuries.md)
 - [`Status_Effect_Keywords.md`](./Statuses_and_Injuries/Status_Effect_Keywords.md)
-- [`Statuses.md`](./Statuses_and_Injuries/Statuses.md)
 
 ### System and Engine
 - [`Damage_Text_Styles.md`](./System_and_Engine/Damage_Text_Styles.md)

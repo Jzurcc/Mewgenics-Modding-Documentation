@@ -64,7 +64,7 @@ You can scale the size of the text (useful for fine-print or auxiliary info).
 
 | Tag | Effect | Example Usage |
 | :--- | :--- | :--- |
-| `[s:X]` | Scales the text to `X` size (where 1.0 is normal). | `[s:.7](Can only be used once.)[/s]` |
+| `[s:X]` | Scales the text to `X` size (where 1.0 is normal). | `\[s:.7\](Can only be used once.)\[/s\]` |
 
 ---
 

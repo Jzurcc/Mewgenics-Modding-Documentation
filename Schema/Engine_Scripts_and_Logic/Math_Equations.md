@@ -74,12 +74,12 @@ In the Mewgenics engine, many numeric fields can accept an inline math equation 
 | `mov` | |
 | `spd` | |
 | `lvl` | |
-| `aux` | |
 | `health` | |
 | `charge` | |
 | `max_range` | |
 | `StrengthUp` | |
 | `item_aux` | |
+| `aux` | |
 | `bonus_melee_damage` | |
 | `bonus_ranged_damage` | |
 | `bonus_melee_ability_damage` | |
