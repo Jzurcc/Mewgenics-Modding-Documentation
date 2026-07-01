@@ -217,3 +217,7 @@ If your mod fails to load or causes the engine to crash, verify the files agains
    - ✗ `paint True`
    - ✓ `paint true`
 3. **Unmatched Braces:** Every `{` requires a terminating `}`. A missing brace will cause the parser to fail for the remainder of the file.
+
+---
+
+To ease your mod development, I recommend downloading the [Base Class Mod](https://www.nexusmods.com/mewgenics/mods/10) and reading its guide [here](https://docs.google.com/document/d/1rTHo2btLk3cu8SHFHQ7_eQdtA57iVmUCZzneeV7SHPY/).
